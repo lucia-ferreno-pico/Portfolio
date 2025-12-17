@@ -1,15 +1,27 @@
-# Portfolio (SQL · Python · R · Power BI)
+---
+layout: default
+---
 
-Portfolio de proyectos del máster: análisis de datos, modelado y visualización.
+# Lucía Ferreno Pico
+Analista de datos orientada a BI. Power BI (DAX + modelado), SQL, Python y R.
 
-## Secciones
-- [SQL](./01_sql/)
-- [Python](./02_python/)
-- [R](./03_r/)
-- [Power BI](./04_powerbi/)
+## Proyectos destacados
+- **Dashboard de Ventas y Estacionalidad (Power BI)**  
+  Modelo estrella, KPIs, segmentación por provincia/producto, análisis temporal.  
+  Carpeta: `./04_powerbi/dashboard_ventas/`
 
-## Proyectos (próximamente)
-Iré añadiendo proyectos con documentación, código y capturas.
+- **Consultas analíticas de ventas (SQL)**  
+  Ventanas, rankings, cohortes, calidad de datos.  
+  Carpeta: `./01_sql/ventas_provincias/`
+
+- **Predicción de ventas (Python/R)**  
+  Series temporales (ARIMA/ETS), validación y métricas.  
+  Carpeta: `./02_python/prediccion_ventas/`
+
+## Certificación
+- Microsoft Power BI (PL-300) — Diciembre de 2025
 
 ## Contacto
-- LinkedIn: www.linkedin.com/in/lucia-ferreno-data-analyst
+- LinkedIn: https://www.linkedin.com/in/lucia-ferreno-data-analyst
+- Email: luciaferreferre@gmail.com
+- GitHub: https://github.com/lucia-ferreno-pico
