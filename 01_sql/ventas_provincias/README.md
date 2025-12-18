@@ -30,6 +30,9 @@ Construir consultas SQL para extraer datasets desde una base OLTP (AdventureWork
   - `0` si no (tratado con `ISNULL`).
 - Enriquecimiento del dataset de la Parte II mediante `LEFT JOIN` a una CTE.
 
+## Código
+- [Ver queries.sql en GitHub](https://github.com/lucia-ferreno-pico/Portfolio/blob/main/01_sql/ventas_provincias/queries.sql)
+
 ## Tablas utilizadas
 - `Sales.SalesOrderHeader`, `Sales.SalesOrderDetail`
 - `Sales.SalesTerritory`
