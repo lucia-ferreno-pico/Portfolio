@@ -76,4 +76,4 @@ Ambos indicadores cambian dinámicamente según filtros y selección en gráfico
 
 ## Notas
 - Proyecto académico (Master BI). Datos: `Product`, `SalesDay`, `puntos_venta_enriquecido2`.
-- El `.pbix` se comparte solo si no contiene información sensible (alternativa: PDF + capturas).
+
