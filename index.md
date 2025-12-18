@@ -22,6 +22,6 @@ Analista de datos orientada a BI. Power BI (DAX + modelado), SQL, Python y R.
 - Microsoft Power BI (PL-300) — Diciembre de 2025
 
 ## Contacto
-- LinkedIn: <https://www.linkedin.com/in/lucia-ferreno-data-analyst>
-- Email: <mailto:luciaferreferre@gmail.com>
-- GitHub: <https://github.com/lucia-ferreno-pico>
+- [LinkedIn](https://www.linkedin.com/in/lucia-ferreno-data-analyst)
+- [Email](mailto:luciaferreferre@gmail.com)
+- [GitHub](https://github.com/lucia-ferreno-pico)
