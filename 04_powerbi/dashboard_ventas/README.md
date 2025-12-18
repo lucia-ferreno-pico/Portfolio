@@ -45,22 +45,27 @@ Ambos indicadores cambian dinámicamente según filtros y selección en gráfico
 ---
 
 ## Capturas
+
+### Informe de ventas (vista general)
+![](./screenshots/01_informe_ventas.png)
+
+### Menú de filtros
+![](./screenshots/02_menu_filtros.png)
+
+### Tooltip del mapa (CCAA/Provincia + top productos)
+![](./screenshots/03_tooltip_mapa.png)
+
+### Ventas por día de la semana
+![](./screenshots/04_ventas_dia_semana.png)
+
+### Página detalle de ventas
+![](./screenshots/05_detalle_ventas.png)
+
+### Drillthrough (Obtener detalles)
+![](./screenshots/06_drillthrough.png)
+
+### Pdf
 - [Anexo dashboard (PDF)](./screenshots/DASHBOARD%20VENTAS.pdf)
-
-### Menú de filtros + KPIs
-![](./screenshots/01_filtros_kpis.png)
-
-### Evolución temporal + drillthrough a detalle
-![](./screenshots/02_temporal_drillthrough.png)
-
-### Página de detalle de ventas
-![](./screenshots/03_detalle_ventas.png)
-
-### Día de la semana + mapa + tooltip dinámico
-![](./screenshots/04_mapa_tooltip_diasemana.png)
-
-### Modelo estrella / calendario / parámetros (si tienes captura)
-![](./screenshots/05_modelo_estrella.png)
 
 ## Cómo usar el dashboard (rápido)
 1. Selecciona **periodo** (y la escala temporal: día/mes/trimestre/año).
