@@ -47,7 +47,7 @@ Ambos indicadores cambian dinámicamente según filtros y selección en gráfico
 ## Capturas
 
 ### Informe de ventas (vista general)
-![](./screenshots/01_informe_ventas.png)
+![](./screenshots/01_informe_server.png)
 
 ### Menú de filtros
 ![](./screenshots/02_menu_filtros.png)
