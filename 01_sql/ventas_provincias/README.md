@@ -13,9 +13,6 @@ Construir consultas SQL para extraer datasets desde una base OLTP (AdventureWork
 ## Entregables
 - [queries.sql](./queries.sql) script con las 3 partes del ejercicio.
 
-## Código
-- [Ver queries.sql en GitHub](https://github.com/lucia-ferreno-pico/Portfolio/blob/main/01_sql/ventas_provincias/queries.sql)
-
 ## Parte I — Series temporales (2011–2014)
 - Ventas globales por `OrderDate`.
 - Ventas por región: **North America**, **Europe**, **Pacific**.
