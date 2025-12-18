@@ -45,7 +45,7 @@ Ambos indicadores cambian dinámicamente según filtros y selección en gráfico
 ---
 
 ## Capturas
-> Sube las imágenes a `./screenshots/` con estos nombres para que se vean aquí.
+- [Anexo dashboard (PDF)](./screenshots/DASHBOARD%20VENTAS.pdf)
 
 ### Menú de filtros + KPIs
 ![](./screenshots/01_filtros_kpis.png)
