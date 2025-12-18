@@ -11,7 +11,7 @@ Construir consultas SQL para extraer datasets desde una base OLTP (AdventureWork
 - Motor: SQL Server (T-SQL)
 
 ## Entregables
-- `queries.sql`: script con las 3 partes del ejercicio.
+- [queries.sql](./queries.sql): script con las 3 partes del ejercicio.
 
 ## Parte I — Series temporales (2011–2014)
 - Ventas globales por `OrderDate`.
