@@ -1,10 +1,20 @@
 # Dashboard de Ventas — Power BI (Análisis interactivo)
 
-## Objetivo
-Responder a preguntas de negocio clave:
+## Resumen
+Dashboard de ventas orientado a responder preguntas de negocio:
 **¿qué se vende?, ¿dónde se vende?, ¿quién lo vende? y ¿cuándo se vende?**
 
-El dashboard está diseñado para análisis interactivo de ventas con navegación a detalle y tooltips enriquecidos.
+Incluye navegación a detalle (drillthrough), menú de filtros avanzado, parámetros y tooltip dinámico geográfico.
+
+---
+
+## Objetivo
+Facilitar el análisis exploratorio y operativo de las ventas mediante:
+- KPIs dinámicos (unidades y % sobre el total)
+- Evolución temporal con cambio de granularidad (día/mes/trimestre/año)
+- Comparativas por territorio, punto de venta y producto
+- Acceso a detalle del periodo seleccionado y desglose de productos
+- Mapa con tooltip enriquecido por CCAA/provincia
 
 ## Estructura del informe (4 páginas)
 1. **Portada**
@@ -12,35 +22,42 @@ El dashboard está diseñado para análisis interactivo de ventas con navegació
 3. **Detalle de ventas** (acceso desde “Obtener detalles”)
 4. **Tooltip del mapa** (dinámico por CCAA / provincia)
 
-## Modelo de datos
-- **Modelo estrella** (fact + dimensiones).
-- **Tabla calendario** para inteligencia temporal y selección de periodo.
-- **Parámetros** para controlar la escala/nivel de detalle de visualización.
+---
 
-## Interacción y filtros
-En el **menú de filtros** se permite:
-- Selección de **rango de fechas**
-- Selección de **escala temporal** (día / mes / trimestre / año)
+## Modelo de datos y enfoque
+### Modelo
+- **Modelo estrella** (tabla de hechos + dimensiones).
+- **Tabla calendario** para inteligencia temporal (jerarquías y periodos).
+- **Parámetros** para controlar escala/nivel de detalle en visualizaciones.
+
+### Datos (proyecto académico)
+- Tablas: `Product`, `SalesDay`, `puntos_venta_enriquecido2`
+- Granularidad: diaria
+
+---
+
+## Interacción y navegación
+### Menú de filtros
+Permite seleccionar:
+- **Rango de fechas**
+- **Escala temporal** (día / mes / trimestre / año)
 - Filtros por **territorio** (CCAA / provincia), **punto de venta** y **producto**
 
-## KPIs principales
-- **Total unidades vendidas**
-- **% del total**
-Ambos indicadores cambian dinámicamente según filtros y selección en gráficos.
-
-## Análisis de ventas (página principal)
-- **Evolución temporal de unidades vendidas** (día/mes/trimestre/año).
-- Desde una barra del gráfico se puede **Obtener detalles** y navegar a:
-  - **Página Detalle Ventas**, con desagregación por productos/ventas del periodo.
+### Drillthrough a detalle
+- En el gráfico temporal se puede **Obtener detalles** para navegar a **Detalle de ventas**.
 - Botón **Volver** para retornar a la página principal.
 
-## Visuales adicionales
-- **Ventas por día de la semana** (líneas) con opción de obtener detalle.
-- **Mapa geográfico** de distribución de ventas:
-  - Selector por **CCAA** o **provincia**
-  - **Tooltip dinámico** al pasar el ratón con:
-    - Unidades vendidas del territorio
-    - **Top productos** y cantidad vendida (gráfico de barras)
+### Tooltip dinámico del mapa
+- Al posicionarse sobre **CCAA/provincia** se muestra un tooltip con:
+  - Unidades vendidas del territorio
+  - **Top productos** y cantidad vendida (barras)
+
+---
+
+## KPIs principales
+- **Unidades vendidas**
+- **% sobre el total**
+Los indicadores se recalculan dinámicamente con filtros y selecciones.
 
 ---
 
@@ -64,16 +81,20 @@ Ambos indicadores cambian dinámicamente según filtros y selección en gráfico
 ### Drillthrough (Obtener detalles)
 ![](./screenshots/06_drillthrough.png)
 
-### Pdf
+---
+
+## Entregables
 - [Anexo dashboard (PDF)](https://github.com/lucia-ferreno-pico/Portfolio/blob/main/04_powerbi/dashboard_ventas/screenshots/dashboard_ventas.pdf)
 
+---
+
 ## Cómo usar el dashboard (rápido)
-1. Selecciona **periodo** (y la escala temporal: día/mes/trimestre/año).
+1. Selecciona **periodo** y la **escala temporal** (día/mes/trimestre/año).
 2. Filtra por **CCAA/provincia**, **punto de venta** y/o **producto**.
-3. Consulta KPIs y visuales.
-4. En el gráfico temporal usa **Obtener detalles** para ir a **Detalle Ventas** y vuelve con **Volver**.
+3. Revisa KPIs y visuales para identificar patrones de venta.
+4. En el gráfico temporal usa **Obtener detalles** para ir a **Detalle de ventas**.
 5. En el mapa, pasa el ratón por el territorio para ver el **tooltip** con top productos.
 
 ## Notas
-- Proyecto académico (Master BI). Datos: `Product`, `SalesDay`, `puntos_venta_enriquecido2`.
+- Proyecto académico (Master BI).
 
