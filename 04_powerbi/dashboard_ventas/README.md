@@ -65,7 +65,7 @@ Ambos indicadores cambian dinámicamente según filtros y selección en gráfico
 ![](./screenshots/06_drillthrough.png)
 
 ### Pdf
-- [Anexo dashboard (PDF)](./screenshots/DASHBOARD%20VENTAS.pdf)
+- [Anexo dashboard (PDF)](./screenshots/dashboard_ventas.pdf)
 
 ## Cómo usar el dashboard (rápido)
 1. Selecciona **periodo** (y la escala temporal: día/mes/trimestre/año).
