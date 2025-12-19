@@ -19,9 +19,9 @@ Ventanas, rankings, cohortes, calidad de datos.
 Series temporales (ARIMA/ETS), validación y métricas.  
 [Ver proyecto](./02_python/prediccion_ventas/)
 
-### Convergencia de ventas por provincias (R)
-Clubes de convergencia (ConvergenceClubs) y análisis por provincias.  
-[Ver proyecto](./03_r/convergencia_provincias/)
+### Análisis exploratorio (R) — AdventureWorks
+Facturación por país, tendencia de ventas, precios por categoría/color y perfil de compradores de bicicletas.  
+[Ver proyecto](./03_r/adventureworks_eda/)
 
 ## Certificación
 - Microsoft Power BI (PL-300) — Diciembre de 2025
