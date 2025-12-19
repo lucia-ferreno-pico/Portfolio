@@ -1,7 +1,7 @@
 # Proyecto transversal (R) — AdventureWorks: análisis exploratorio y preguntas de negocio
 
 ## Contexto
-Realiza un análisis exploratorio sobre un dataset extraído de AdventureWorks (`dataset_AW.xlsx`) para obtener una visión general del negocio.
+Análisis exploratorio sobre un dataset extraído de AdventureWorks (`dataset_AW.xlsx`) para obtener una visión general del negocio.
 
 ## Dataset
 Archivo: `dataset_AW.xlsx`
