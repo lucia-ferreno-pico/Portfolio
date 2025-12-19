@@ -10,9 +10,17 @@ Análisis exploratorio y modelado (regresión lineal) para explicar variables ob
 ## Código
 - [Ver notebook en GitHub](https://github.com/lucia-ferreno-pico/Portfolio/blob/main/02_python/actividad_ina_fifa/Actividad_3_INA.ipynb)
 
-## Resultados (capturas)
-![](./screenshots/output_01.png)
-![](./screenshots/output_02.png)
+## Capturas
+
+### Matriz de correlación
+![](./screenshots/01_correlacion.png)
+
+### Top ligas (coeficientes del modelo)
+![](./screenshots/02_top5_ligas_coeficientes.png)
+
+### Salario medio por club
+![](./screenshots/03_salario_medio_club.png)
+
 
 ## Nota
 El notebook se visualiza correctamente en GitHub. En GitHub Pages se presenta este README como resumen del proyecto.
