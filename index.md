@@ -19,9 +19,9 @@ Ventanas, rankings, cohortes, calidad de datos.
 Series temporales (ARIMA/ETS), validación y métricas.  
 [Ver proyecto](./02_python/prediccion_ventas/)
 
-### Análisis exploratorio (R) — AdventureWorks
-Facturación por país, tendencia de ventas, precios por categoría/color y perfil de compradores de bicicletas.  
-[Ver proyecto](./03_r/adventureworks_eda/)
+### Proyecto transversal (R) — AdventureWorks
+Análisis exploratorio: facturación por país, tendencia de ventas, precios por color y perfil de compradores de bicicletas.  
+[Ver proyecto](./03_r/adventureworks_transversal/)
 
 ## Certificación
 - Microsoft Power BI (PL-300) — Diciembre de 2025
