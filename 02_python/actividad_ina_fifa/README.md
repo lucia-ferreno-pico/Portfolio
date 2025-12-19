@@ -22,5 +22,3 @@ Análisis exploratorio y modelado (regresión lineal) para explicar variables ob
 ![](./screenshots/03_salario_medio_club.png)
 
 
-## Nota
-El notebook se visualiza correctamente en GitHub. En GitHub Pages se presenta este README como resumen del proyecto.
