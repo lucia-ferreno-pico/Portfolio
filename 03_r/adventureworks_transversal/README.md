@@ -41,9 +41,19 @@ Se analiza el perfil de compradores y se compara con no compradores.
 3. Diferencias de precio claras por tipo de producto y por **color**; recomendable analizar si el color también impacta en volumen/ventas.
 4. Segmentación: comprador tipo con perfil definido (edad, ingresos, educación, género) para orientar campañas y fidelización.
 
+## Resultados (capturas)
+
+### Top 10 países por facturación
+![](./screenshots/01_top10_paises.png)
+
+### Tendencia de ventas (mensual)
+![](./screenshots/02_tendencia_ventas.png)
+
+### Precio por color
+![](./screenshots/03_precio_por_color.png)
+
 ## Entregables
 - [Script en R](./analysis.R)
-- (Opcional) Informe/PDF o capturas de gráficos (si se añaden posteriormente)
 
 ## Stack
 `readxl`, `dplyr`, `ggplot2`, `patchwork`, `lubridate`
