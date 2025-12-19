@@ -15,9 +15,13 @@ Modelo estrella, KPIs, segmentación por provincia/producto, análisis temporal.
 Ventanas, rankings, cohortes, calidad de datos.  
 [Ver proyecto](./01_sql/ventas_provincias/)
 
-### Predicción de ventas (Python/R)
+### Predicción de ventas (Python)
 Series temporales (ARIMA/ETS), validación y métricas.  
 [Ver proyecto](./02_python/prediccion_ventas/)
+
+### Convergencia de ventas por provincias (R)
+Clubes de convergencia (ConvergenceClubs) y análisis por provincias.  
+[Ver proyecto](./03_r/convergencia_provincias/)
 
 ## Certificación
 - Microsoft Power BI (PL-300) — Diciembre de 2025
