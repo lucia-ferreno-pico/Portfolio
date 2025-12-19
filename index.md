@@ -15,9 +15,9 @@ Modelo estrella, KPIs, segmentación por provincia/producto, análisis temporal.
 Ventanas, rankings, cohortes, calidad de datos.  
 [Ver proyecto](./01_sql/ventas_provincias/)
 
-### Predicción de ventas (Python)
-Series temporales (ARIMA/ETS), validación y métricas.  
-[Ver proyecto](./02_python/prediccion_ventas/)
+### Proyecto Python — Actividad INA (AdventureWorks)**  
+  Análisis exploratorio y modelado (regresión lineal), preparación de variables y evaluación.  
+  [Ver proyecto](./02_python/actividad_ina_fifa/)
 
 ### Proyecto transversal (R) — AdventureWorks
 Análisis exploratorio: facturación por país, tendencia de ventas, precios por color y perfil de compradores de bicicletas.  
