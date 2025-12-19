@@ -15,7 +15,7 @@ Modelo estrella, KPIs, segmentación por provincia/producto, análisis temporal.
 Ventanas, rankings, cohortes, calidad de datos.  
 [Ver proyecto](./01_sql/ventas_provincias/)
 
-### Proyecto Python — Actividad INA (AdventureWorks)**  
+### Proyecto Python — Actividad INA (AdventureWorks)  
   Análisis exploratorio y modelado (regresión lineal), preparación de variables y evaluación.  
   [Ver proyecto](./02_python/actividad_ina_fifa/)
 
