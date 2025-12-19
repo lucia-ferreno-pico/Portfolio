@@ -1,0 +1,18 @@
+# Proyecto Python — Actividad INA (AdventureWorks / FIFA)
+
+## Objetivo
+Análisis exploratorio y modelado (regresión lineal) para explicar variables objetivo a partir de variables numéricas y categóricas, incluyendo interpretación de coeficientes del modelo.
+
+## Entregables
+- Notebook: `Actividad_3_INA_Grupo6_18.ipynb`
+- Capturas de resultados en `screenshots/`
+
+## Código
+- [Ver notebook en GitHub](https://github.com/lucia-ferreno-pico/Portfolio/blob/main/02_python/actividad_ina_fifa/Actividad_3_INA_Grupo6_18.ipynb)
+
+## Resultados (capturas)
+![](./screenshots/output_01.png)
+![](./screenshots/output_02.png)
+
+## Nota
+El notebook se visualiza correctamente en GitHub. En GitHub Pages se presenta este README como resumen del proyecto.
