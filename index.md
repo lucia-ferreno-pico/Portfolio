@@ -4,6 +4,7 @@ layout: default
 
 # Lucía Ferreno Pico
 Analista de datos orientada a BI y analítica avanzada. Power BI (DAX + modelado), SQL, Python y R.
+
 <a href="{{ '/CV_Lucia_Ferreno.pdf' | relative_url }}" target="_blank" rel="noopener">Ver CV (PDF)</a>
 
 ## Proyectos destacados
