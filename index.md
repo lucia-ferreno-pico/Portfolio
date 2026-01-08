@@ -7,6 +7,7 @@ Analista de datos orientada a BI y analítica avanzada. Power BI (DAX + modelado
 
 <a href="{{ '/CV_Lucia_Ferreno.pdf' | relative_url }}" target="_blank" rel="noopener">Ver CV (PDF)</a>
 
+
 ## Proyectos destacados
 
 ### Dashboard de Ventas y Estacionalidad (Power BI)
