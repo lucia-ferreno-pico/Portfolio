@@ -21,7 +21,7 @@ Como analista de BI, transformo datos de una base **OLTP (AdventureWorks2017)** 
 
 ---
 
-## Entregable 1 — Series temporales de ventas (2011–2014)
+## 1 — Series temporales de ventas (2011–2014)
 **Objetivo:** ventas diarias globales y por región (North America, Europe, Pacific) y dataset final combinado por fecha.
 
 **Decisión clave:** al combinar regiones se usa `LEFT JOIN` por fecha para **no perder días** donde una región no tenga ventas (serie completa y comparable). 
@@ -29,27 +29,7 @@ Como analista de BI, transformo datos de una base **OLTP (AdventureWorks2017)** 
 ### Evidencia (resultado)
 ![Entregable 1 — Serie por fecha y región](../../assets/img/sql/ventas_provincias/parte1_series.png)
 
-### Consulta SQL
-```sql
--- Parte I (fragmento): dataset final por fecha + regiones (temp tables + LEFT JOIN)
-SELECT SOH.OrderDate,
-       SUM(SOD.LineTotal) AS SALES,
-       USA.SalesUSA,
-       EU.SalesEU,
-       PAC.SalesPAc
-FROM Sales.SalesOrderDetail AS SOD
-INNER JOIN Sales.SalesOrderHeader AS SOH
-    ON SOH.SalesOrderID = SOD.SalesOrderID
-LEFT JOIN #tablatemporalUSA AS USA
-    ON USA.OrderDate = SOH.OrderDate
-LEFT JOIN #tablatemporaleu AS EU
-    ON EU.OrderDate = SOH.OrderDate
-LEFT JOIN #tablatemporalpac AS PAC
-    ON PAC.OrderDate = SOH.OrderDate
-GROUP BY SOH.OrderDate, USA.SalesUSA, EU.SalesEU, PAC.SalesPAc
-ORDER BY SOH.OrderDate;
-
-## Entregable 2 — Dataset de clientes para regresión
+## 2 — Dataset de clientes para regresión
 **Objetivo:** dataset por cliente con gasto acumulado y variables demográficas (edad, ingresos, educación, etc.).
 
 ### Evidencia (resultado)
