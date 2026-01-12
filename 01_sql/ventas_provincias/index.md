@@ -24,7 +24,7 @@ Como analista de BI, transformo datos de una base **OLTP (AdventureWorks2017)** 
 ## Entregable 1 — Series temporales de ventas (2011–2014)
 **Objetivo:** ventas diarias globales y por región (North America, Europe, Pacific) y dataset final combinado por fecha.
 
-**Decisión clave:** al combinar regiones se usa `LEFT JOIN` por fecha para **no perder días** donde una región no tenga ventas (serie completa y comparable). :contentReference[oaicite:3]{index=3}
+**Decisión clave:** al combinar regiones se usa `LEFT JOIN` por fecha para **no perder días** donde una región no tenga ventas (serie completa y comparable). 
 
 ### Evidencia (resultado)
 ![Entregable 1 — Serie por fecha y región](../../assets/img/sql/ventas_provincias/parte1_series.png)
