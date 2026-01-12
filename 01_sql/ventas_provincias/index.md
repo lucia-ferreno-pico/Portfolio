@@ -35,5 +35,10 @@ Como analista de BI, transformo datos de una base **OLTP (AdventureWorks2017)** 
 ### Evidencia (resultado)
 ![Entregable 2 — Dataset regresión](../../assets/img/sql/ventas_provincias/parte2_regresion.png)
 
+## 3 — Dataset de clientes para clasificación (BikePurchase)
+**Objetivo:** crear la variable objetivo BikePurchase (1 si compró bicicleta, 0 si no).
+
+### Evidencia (resultado)
+![Entregable 3 — Dataset regresión](../../assets/img/sql/ventas_provincias/parte3_clasificacion.png)
 
 
