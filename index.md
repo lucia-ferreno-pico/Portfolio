@@ -27,7 +27,13 @@ Análisis exploratorio: facturación por país, tendencia de ventas, precios por
 [Ver proyecto](./03_r/adventureworks_transversal/)
 
 ## Certificación
-- Microsoft Certified: Power BI Data Analyst Associate (PL-300) — Certificada (ver credencial)
+- Microsoft Certified: Power BI Data Analyst Associate (PL-300) — Certificada
+
+<a href="https://learn.microsoft.com/api/credentials/share/es-es/luciaferrenopico-9943/D15B2D91C08BD62B?sharingId=1CE9A7D4EED2BA72"
+   target="_blank" rel="noopener noreferrer"
+   style="display:inline-block;margin-top:10px;padding:10px 14px;border:1px solid #111;border-radius:12px;text-decoration:none;">
+  Ver credencial PL-300 (Microsoft Learn)
+</a>
 
 ## Contacto
 - [LinkedIn](https://www.linkedin.com/in/lucia-ferreno-data-analyst)
