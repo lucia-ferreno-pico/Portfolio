@@ -29,10 +29,9 @@ Como analista de BI, transformo datos de una base **OLTP (AdventureWorks2017)** 
 ### Evidencia (resultado)
 ![Entregable 1 — Serie por fecha y región](../../assets/img/sql/ventas_provincias/parte1_series.png)
 
-### Snippet clave (tu SQL)
+### Consulta SQL
 ```sql
 -- Parte I (fragmento): dataset final por fecha + regiones (temp tables + LEFT JOIN)
--- (Extraído de tu script ACT 3 grupo 6.sql)
 SELECT SOH.OrderDate,
        SUM(SOD.LineTotal) AS SALES,
        USA.SalesUSA,
@@ -49,4 +48,12 @@ LEFT JOIN #tablatemporalpac AS PAC
     ON PAC.OrderDate = SOH.OrderDate
 GROUP BY SOH.OrderDate, USA.SalesUSA, EU.SalesEU, PAC.SalesPAc
 ORDER BY SOH.OrderDate;
+
+## Entregable 2 — Dataset de clientes para regresión
+**Objetivo:** dataset por cliente con gasto acumulado y variables demográficas (edad, ingresos, educación, etc.).
+
+### Evidencia (resultado)
+![Entregable 2 — Dataset regresión](../../assets/img/sql/ventas_provincias/parte2_regresion.png)
+
+
 
