@@ -1,4 +1,4 @@
-# Proyecto Python — Actividad INA (AdventureWorks / FIFA)
+# Proyecto Python — Actividad INA (FIFA)
 
 ## Objetivo
 Análisis exploratorio y modelado (regresión lineal) para explicar variables objetivo a partir de variables numéricas y categóricas, incluyendo interpretación de coeficientes del modelo.
