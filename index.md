@@ -27,7 +27,7 @@ Análisis exploratorio: facturación por país, tendencia de ventas, precios por
 [Ver proyecto](./03_r/adventureworks_transversal/)
 
 ## Certificación
-- Microsoft Power BI (PL-300) — prevista para diciembre de 2025
+- Microsoft Certified: Power BI Data Analyst Associate (PL-300) — Certificada (ver credencial)
 
 ## Contacto
 - [LinkedIn](https://www.linkedin.com/in/lucia-ferreno-data-analyst)
