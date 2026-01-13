@@ -22,9 +22,14 @@ Ventanas, rankings, cohortes y controles de calidad de datos.
 Análisis exploratorio y modelado (regresión lineal), preparación de variables y evaluación.  
 [Ver proyecto](./02_python/actividad_ina_fifa/)
 
+### Proyecto Python — CRM (AdventureWorks)
+Visión 360 y segmentación de clientes con K-Means (Elbow + Silhouette) y recomendaciones por cluster.  
+[Ver proyecto](./05_crm/adventureworks_clientes/)
+
 ### Proyecto transversal (R) — AdventureWorks
 Análisis exploratorio: facturación por país, tendencia de ventas, precios por color y perfil de compradores de bicicletas.  
 [Ver proyecto](./03_r/adventureworks_transversal/)
+
 
 ## Certificación
 - Microsoft Certified: Power BI Data Analyst Associate (PL-300) — Certificada
