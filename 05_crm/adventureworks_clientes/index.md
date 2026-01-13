@@ -110,4 +110,5 @@ Se identifican cuatro perfiles con implicaciones comerciales diferenciadas:
   - Accesorios/piezas y activación: orientar al **cluster 0**, valorando su sensibilidad a descuentos.
 - Beneficio principal: mejor **diseño de estrategias comerciales** y mejora del **ROI** al reducir el público objetivo y personalizar mensajes por segmento.
 
-<!-- rebuild -->
+
+<!-- deploy -->
