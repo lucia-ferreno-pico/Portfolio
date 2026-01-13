@@ -111,3 +111,5 @@ Se identifican cuatro perfiles con implicaciones comerciales diferenciadas:
 - Beneficio principal: mejor **diseño de estrategias comerciales** y mejora del **ROI** al reducir el público objetivo y personalizar mensajes por segmento.
 
 <!-- deploy -->
+
+
