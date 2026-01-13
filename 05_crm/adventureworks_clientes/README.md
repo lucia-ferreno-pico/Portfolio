@@ -97,4 +97,11 @@ Se identifican cuatro perfiles con implicaciones comerciales diferenciadas:
 
 ---
 
-## Conclus
+## Conclusiones (resumen)
+- El modelo identifica **4 clusters** coherentes y accionables. La validación mediante **Silhouette medio = 0,745** indica un **buen agrupamiento**.
+- El análisis 360 muestra un perfil predominante: gasto **0–1300 USD**, ingresos **25.000–75.000 USD**, edades **45–62**, con **hijos**, **vivienda en propiedad** y **al menos un coche**; con mayor volumen en **US** y después **Australia**.
+- Se observan relaciones consistentes entre variables: **TotalAmount** se asocia con compra de bicicleta e ingresos; **Education/Occupation/Income** mantienen coherencia socioeconómica.
+- La segmentación permite **focalizar campañas y optimizar recursos**:
+  - Bicicletas y productos de mayor valor: priorizar **clusters 1, 2 y 3**.
+  - Accesorios/piezas y activación: orientar al **cluster 0**, valorando su sensibilidad a descuentos.
+- Beneficio principal: mejor **diseño de estrategias comerciales** y mejora del **ROI** al reducir el público objetivo y personalizar mensajes por segmento.
