@@ -24,7 +24,7 @@ Análisis exploratorio y modelado (regresión lineal), preparación de variables
 
 ### Proyecto Python — CRM (AdventureWorks)
 Visión 360 y segmentación de clientes con K-Means (Elbow + Silhouette) y recomendaciones por cluster.  
-[Ver proyecto]({{ '/05_crm/adventureworks_clientes/' | relative_url }})
+[Ver proyecto](./05_crm/adventureworks_clientes/)
 
 ### Proyecto transversal (R) — AdventureWorks
 Análisis exploratorio: facturación por país, tendencia de ventas, precios por color y perfil de compradores de bicicletas.  
