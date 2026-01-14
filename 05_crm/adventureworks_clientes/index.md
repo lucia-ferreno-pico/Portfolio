@@ -25,7 +25,7 @@ Proyecto de **análisis 360 de clientes** y **segmentación (clustering)** usand
 ---
 
 ## Ejecución
-- Abrir `Actividad_CRM.ipynb` en Colab o en Jupyter y ejecutar las celdas en orden.
+- Abrir `Actividad_CRM.ipynb` en Colab o en Jupyter y ejecutar las celdas en orden. 
 
 ---
 
