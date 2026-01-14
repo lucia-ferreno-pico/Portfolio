@@ -12,7 +12,7 @@ Proyecto de **análisis 360 de clientes** y **segmentación (clustering)** usand
 - `Actividad_CRM.ipynb`: notebook principal (EDA → preparación → K-Means → evaluación → conclusiones).
 - `dataset_AW.csv`: dataset público AdventureWorks utilizado.
 - `README.md`: descripción del proyecto.
-- `imgs/`: capturas clave del análisis.
+- `imgs/`: capturas clave del análisis. 
 
 ---
 
