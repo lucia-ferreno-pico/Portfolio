@@ -10,9 +10,11 @@ Proyecto de **análisis 360 de clientes** y **segmentación (clustering)** usand
 
 ## Archivos
 - `Actividad_CRM.ipynb`: notebook principal (EDA → preparación → K-Means → evaluación → conclusiones).
+- [Notebook — Actividad_CRM.ipynb (GitHub)](https://github.com/lucia-ferreno-pico/Portfolio/blob/main/05_crm/adventureworks_clientes/Actividad_CRM.ipynb)
+- [Abrir notebook en Colab](https://colab.research.google.com/github/lucia-ferreno-pico/Portfolio/blob/main/05_crm/adventureworks_clientes/Actividad_CRM.ipynb)
+- [Ver notebook en nbviewer](https://nbviewer.org/github/lucia-ferreno-pico/Portfolio/blob/main/05_crm/adventureworks_clientes/Actividad_CRM.ipynb)
 - `dataset_AW.csv`: dataset público AdventureWorks utilizado.
-- `README.md`: descripción del proyecto.
-- `imgs/`: capturas clave del análisis. 
+- [Dataset — dataset_AW.csv (GitHub)](https://github.com/lucia-ferreno-pico/Portfolio/blob/main/05_crm/adventureworks_clientes/dataset_AW.csv)
 
 ---
 
