@@ -39,48 +39,57 @@ layout: default
 <section class="section" id="about">
   <div class="section__title">
     <h2>About</h2>
-    <span class="section__hint">Perfil profesional</span>
+    <span class="section__hint">Qué aporto</span>
   </div>
 
   <p>
-    Analista de datos orientada a BI y analítica avanzada. Construyo dashboards accionables, modelos de datos robustos y análisis que soportan decisiones de negocio.
+    Analista de datos orientada a BI y analítica avanzada. Transformo datos en decisiones con dashboards accionables,
+    modelos de datos sólidos y análisis reproducibles.
   </p>
 
   <div class="grid">
     <div class="card" style="grid-column: span 4;">
       <div class="card__body">
-        <p class="card__kicker">Especialidad</p>
-        <h3 class="card__title">Power BI</h3>
-        <p class="card__desc">Modelado, DAX, KPIs y diseño de reporting para negocio.</p>
+        <p class="card__kicker">1) BI orientado a negocio</p>
+        <h3 class="card__title">Dashboards que se usan</h3>
+        <p class="card__desc">KPIs claros, storytelling visual y navegación pensada para usuario final.</p>
         <div class="card__tags">
-          <span class="tag">Modelo estrella</span><span class="tag">DAX</span><span class="tag">KPIs</span>
+          <span class="tag">Power BI</span><span class="tag">KPIs</span><span class="tag">UX</span>
         </div>
       </div>
     </div>
 
     <div class="card" style="grid-column: span 4;">
       <div class="card__body">
-        <p class="card__kicker">Datos</p>
-        <h3 class="card__title">SQL</h3>
-        <p class="card__desc">Consultas analíticas, ventanas, cohortes y controles de calidad.</p>
+        <p class="card__kicker">2) Datos confiables</p>
+        <h3 class="card__title">Modelado + calidad</h3>
+        <p class="card__desc">Modelo estrella, definición de métricas y controles de calidad para evitar “números distintos”.</p>
         <div class="card__tags">
-          <span class="tag">Window</span><span class="tag">Cohorts</span><span class="tag">Data QA</span>
+          <span class="tag">Modelado</span><span class="tag">DAX</span><span class="tag">Data QA</span>
         </div>
       </div>
     </div>
 
     <div class="card" style="grid-column: span 4;">
       <div class="card__body">
-        <p class="card__kicker">Analítica</p>
-        <h3 class="card__title">Python / R</h3>
-        <p class="card__desc">EDA, modelado y segmentación (clustering) con enfoque práctico.</p>
+        <p class="card__kicker">3) Analítica aplicada</p>
+        <h3 class="card__title">EDA y modelos</h3>
+        <p class="card__desc">Análisis exploratorio, segmentación y modelos interpretables para apoyar decisiones.</p>
         <div class="card__tags">
-          <span class="tag">EDA</span><span class="tag">Modelado</span><span class="tag">Clustering</span>
+          <span class="tag">Python</span><span class="tag">R</span><span class="tag">Clustering</span>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="pills" style="margin-top: 1rem;">
+    <span class="pill">Power BI · DAX</span>
+    <span class="pill">SQL · Window Functions</span>
+    <span class="pill">Python · Pandas</span>
+    <span class="pill">R · EDA</span>
+  </div>
 </section>
+
 
 <section class="section" id="proyectos">
   <div class="section__title">
@@ -150,38 +159,48 @@ layout: default
   </div>
 </section>
 
-<section class="section" id="contacto">
+<<section class="section" id="contacto">
   <div class="section__title">
     <h2>Contacto</h2>
-    <span class="section__hint">Enlaces directos</span>
+    <span class="section__hint">Hablemos</span>
   </div>
 
-  <div class="grid">
-    <a class="card" style="grid-column: span 4;" href="https://www.linkedin.com/in/lucia-ferreno-data-analyst" target="_blank" rel="noopener">
-      <div class="card__body">
-        <p class="card__kicker">LinkedIn</p>
-        <h3 class="card__title">Conectar</h3>
-        <p class="card__desc">Perfil profesional y experiencia.</p>
-        <div class="card__tags"><span class="tag">linkedin.com</span></div>
-      </div>
-    </a>
+  <p>
+    Si quieres comentar un proyecto, una oportunidad o necesitas apoyo en BI/analítica, puedes contactarme por estos canales:
+  </p>
 
+  <div class="grid">
     <a class="card" style="grid-column: span 4;" href="mailto:luciaferreferre@gmail.com">
       <div class="card__body">
         <p class="card__kicker">Email</p>
-        <h3 class="card__title">Escríbeme</h3>
-        <p class="card__desc">luciaferreferre@gmail.com</p>
-        <div class="card__tags"><span class="tag">respuesta rápida</span></div>
+        <h3 class="card__title">luciaferreferre@gmail.com</h3>
+        <p class="card__desc">Canal preferido para propuestas y detalles.</p>
+        <div class="card__tags"><span class="tag">mailto</span><span class="tag">respuesta rápida</span></div>
+      </div>
+    </a>
+
+    <a class="card" style="grid-column: span 4;" href="https://www.linkedin.com/in/lucia-ferreno-data-analyst" target="_blank" rel="noopener">
+      <div class="card__body">
+        <p class="card__kicker">LinkedIn</p>
+        <h3 class="card__title">Perfil profesional</h3>
+        <p class="card__desc">Experiencia, certificación y publicaciones.</p>
+        <div class="card__tags"><span class="tag">networking</span><span class="tag">mensajería</span></div>
       </div>
     </a>
 
     <a class="card" style="grid-column: span 4;" href="https://github.com/lucia-ferreno-pico" target="_blank" rel="noopener">
       <div class="card__body">
         <p class="card__kicker">GitHub</p>
-        <h3 class="card__title">Repos y proyectos</h3>
-        <p class="card__desc">Código, notebooks y documentación.</p>
-        <div class="card__tags"><span class="tag">github.com</span></div>
+        <h3 class="card__title">Repositorios</h3>
+        <p class="card__desc">Código, notebooks y documentación de proyectos.</p>
+        <div class="card__tags"><span class="tag">portfolio</span><span class="tag">repos</span></div>
       </div>
     </a>
   </div>
+
+  <div class="hero__cta" style="margin-top: 1rem;">
+    <a class="btn" href="mailto:luciaferreferre@gmail.com">Escríbeme</a>
+    <a class="btn" href="https://www.linkedin.com/in/lucia-ferreno-data-analyst" target="_blank" rel="noopener">Abrir LinkedIn</a>
+  </div>
 </section>
+
