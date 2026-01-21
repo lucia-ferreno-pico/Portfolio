@@ -5,21 +5,23 @@
 
 /* Base */
 :root{
-  --bg: #0b1220;
-  --card: rgba(255,255,255,.06);
-  --card2: rgba(255,255,255,.10);
-  --text: rgba(255,255,255,.92);
-  --muted: rgba(255,255,255,.70);
-  --border: rgba(255,255,255,.14);
-  --accent: #7dd3fc;
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --surface2: #f1f5f9;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --accent: #2563eb;
+  --accent2: #1d4ed8;
 }
 
 body{
-  background: radial-gradient(1200px 600px at 10% 0%, rgba(125,211,252,.18), transparent 60%),
-              radial-gradient(900px 500px at 80% 10%, rgba(167,139,250,.18), transparent 60%),
+  background: radial-gradient(1200px 600px at 10% 0%, rgba(37,99,235,.10), transparent 60%),
+              radial-gradient(900px 500px at 80% 10%, rgba(59,130,246,.08), transparent 60%),
               var(--bg);
   color: var(--text);
 }
+
 
 .page-header{
   padding: 2.2rem 1rem 1.4rem;
