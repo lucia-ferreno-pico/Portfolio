@@ -3,212 +3,16 @@
 
 @import "jekyll-theme-cayman";
 
-/* Base */
+/* ====== Base (estilo crema / negro tipo Tamara) ====== */
 :root{
-  --bg: #f6f8fb;
+  --bg: #f6f1e8;           /* crema */
   --surface: #ffffff;
-  --surface2: #f1f5f9;
-  --text: #0f172a;
-  --muted: #475569;
-  --border: #e2e8f0;
-  --accent: #2563eb;
-  --accent2: #1d4ed8;
-}
-
-body{
-  background: radial-gradient(1200px 600px at 10% 0%, rgba(37,99,235,.10), transparent 60%),
-              radial-gradient(900px 500px at 80% 10%, rgba(59,130,246,.08), transparent 60%),
-              var(--bg);
-  color: var(--text);
-}
-
-
-.page-header{
-  padding: 2.2rem 1rem 1.4rem;
-  background-image: none;
-  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0));
-}
-
-.project-tagline{ color: var(--muted); }
-
-.main-content{
-  max-width: 980px;
-  margin: 0 auto;
-}
-
-.main-content h1, .main-content h2, .main-content h3{ color: var(--text); }
-
-.main-content a{
-  color: var(--accent);
-  text-decoration: none;
-}
-.main-content a:hover{ text-decoration: underline; }
-
-/* Top nav */
-.topnav{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(10px);
-  background: rgba(246,248,251,.85);
-  border-bottom: 1px solid var(--border);
-}
-
-.topnav__inner{
-  max-width: 980px;
-  margin: 0 auto;
-  padding: .75rem 1rem;
-  display: flex;
-  gap: .8rem;
-  align-items: center;
-  justify-content: space-between;
-}
-.topnav__brand{
-  font-weight: 700;
-  color: var(--text);
-  text-decoration: none;
-}
-.topnav__links{
-  display: flex;
-  flex-wrap: wrap;
-  gap: .7rem;
-  font-size: .95rem;
-}
-.topnav__links a{
-  color: var(--muted);
-  padding: .35rem .55rem;
-  border-radius: .6rem;
-}
-.topnav__links a:hover{
-  color: var(--text);
-  background: rgba(255,255,255,.06);
-  text-decoration: none;
-}
-
-/* Hero */
-.hero{
-  display: grid;
-  gap: 1rem;
-  padding: 1.2rem 0 1.4rem;
-}
-.hero__title{ font-size: 2rem; margin: 0; }
-.hero__subtitle{
-  margin: .25rem 0 0;
-  color: var(--muted);
-  line-height: 1.55;
-}
-.hero__cta{
-  display: flex;
-  flex-wrap: wrap;
-  gap: .7rem;
-  margin-top: .25rem;
-}
-
-.btn{
-  display: inline-flex;
-  align-items: center;
-  gap: .45rem;
-  padding: .6rem .95rem;
-  border-radius: .9rem;
-  text-decoration: none !important;
-  font-weight: 600;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text) !important;
-  box-shadow: 0 1px 0 rgba(15,23,42,.04);
-}
-.btn:hover{ background: var(--surface2); }
-
-.pills{
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  margin-top: .4rem;
-}
-.pill{
-  font-size: .85rem;
-  color: var(--muted);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: .25rem .55rem;
-  background: rgba(255,255,255,.04);
-}
-
-/* Sections */
-.section{
-  margin: 1.6rem 0;
-  padding-top: .4rem;
-}
-.section__title{
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  margin: 0 0 .75rem;
-}
-.section__title h2{ margin: 0; font-size: 1.35rem; }
-.section__hint{ color: var(--muted); font-size: .95rem; }
-
-/* Cards */
-.grid{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-}
-.card{
-  grid-column: span 6;
-  border: 1px solid var(--border);
-  border-radius: 1rem;
-  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-  overflow: hidden;
-  transition: transform .12s ease, background .12s ease, border-color .12s ease;
-  text-decoration: none !important;
-  display: block;
-}
-.card:hover{
-  transform: translateY(-2px);
-  border-color: rgba(255,255,255,.22);
-  background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.04));
-}
-.card__thumb{
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  display: block;
-  background: rgba(255,255,255,.04);
-}
-.card__body{ padding: .95rem; }
-.card__kicker{ font-size: .85rem; color: var(--muted); margin: 0 0 .25rem; }
-.card__title{ margin: 0 0 .35rem; color: var(--text); font-size: 1.05rem; }
-.card__desc{ margin: 0 0 .65rem; color: var(--muted); line-height: 1.5; }
-.card__tags{ display: flex; flex-wrap: wrap; gap: .45rem; }
-.tag{
-  font-size: .8rem;
-  color: var(--muted);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: .2rem .5rem;
-  background: rgba(255,255,255,.04);
-}
-
-/* Responsive */
-@media (max-width: 860px){
-  .card{ grid-column: span 12; }
-  .hero__title{ font-size: 1.7rem; }
-  .card[style*="grid-column: span 4"]{ grid-column: span 12 !important; }
-}
-/* ---------- PATCH: legibilidad y look profesional (Cayman) ---------- */
-
-/* Fondo claro + texto oscuro garantizado */
-:root{
-  --bg: #f6f8fb;
-  --surface: #ffffff;
-  --surface2: #f1f5f9;
-  --text: #0f172a;
-  --muted: #475569;
-  --border: #dbe3ef;
-  --accent: #1d4ed8;   /* azul más profundo (mejor contraste) */
-  --accent2: #1e40af;
+  --text: #111111;         /* negro */
+  --muted: #333333;
+  --border: rgba(17,17,17,.18);
+  --border2: rgba(17,17,17,.28);
+  --accent: #111111;       /* botón negro */
+  --accent-hover: #0b0b0b;
 }
 
 body{
@@ -216,78 +20,65 @@ body{
   color: var(--text) !important;
 }
 
-/* Header del tema (donde aparece el “Portfolio - …”) */
+/* Oculta el header del tema Cayman (para que no “pise” tu hero) */
 .page-header{
-  background: linear-gradient(180deg, #ffffff 0%, #f6f8fb 100%) !important;
-  padding: 1.6rem 1rem 1.25rem !important;
-  border-bottom: 1px solid var(--border) !important;
+  display: none !important;
 }
 
-.project-name{
-  color: var(--text) !important;
-  text-shadow: none !important;
+/* Un poco más limpio el footer */
+.site-footer{
+  border-top: 1px solid var(--border) !important;
 }
 
-.project-tagline{
-  color: var(--muted) !important;
-}
-
-/* Contenido principal: más “card” y centrado */
+/* Contenedor principal */
 .main-content{
   max-width: 980px !important;
   margin: 0 auto !important;
-  padding: 1.25rem 1rem 2rem !important;
+  padding: 2.2rem 1.2rem 3rem !important;
 }
 
-/* Títulos SIEMPRE visibles */
+/* Tipografía y jerarquía */
 .main-content h1,
 .main-content h2,
 .main-content h3{
   color: var(--text) !important;
+  letter-spacing: -0.02em;
 }
 
-/* Separación real entre secciones (funciona aunque uses Markdown simple) */
-.main-content h2{
-  margin-top: 2.2rem !important;
-  padding-top: 1.2rem !important;
-  border-top: 1px solid var(--border) !important;
+.main-content p{
+  color: var(--muted) !important;
+  line-height: 1.7;
 }
 
-/* Enlaces estándar */
+/* Links */
 .main-content a{
-  color: var(--accent) !important;
-  text-decoration: none;
+  color: var(--text) !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .main-content a:hover{
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
-/* Botones (solo si el link tiene class="btn") */
-.btn{
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: .7rem 1rem !important;
-  border-radius: .9rem !important;
-  font-weight: 700 !important;
-  border: 1px solid var(--border) !important;
-  background: var(--surface2) !important;
-  color: var(--text) !important;
-  text-decoration: none !important;
+/* ====== Hero (texto grande + links discretos) ====== */
+.hero{
+  margin: 0 0 2.2rem;
+  padding: 0 0 1.8rem;
+  border-bottom: 1px solid var(--border);
 }
 
-.btn:hover{
-  background: #e9effa !important;
-  border-color: #c7d2fe !important;
+.hero__title{
+  font-size: 3rem;
+  line-height: 1.05;
+  margin: 0 0 .8rem;
 }
 
-.btn--primary{
-  background: var(--accent) !important;
-  border-color: var(--accent) !important;
-  color: #fff !important;
+.hero__subtitle{
+  font-size: 1.1rem;
+  margin: 0 0 1.1rem;
+  max-width: 62ch;
 }
 
-.btn--primary:hover{
-  background: var(--accent2) !important;
-  border-color: var(--accent2) !important;
-}
+.hero__links{
+  display: flex;
+  flex-wrap: wrap
