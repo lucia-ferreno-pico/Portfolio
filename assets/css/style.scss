@@ -197,3 +197,97 @@ body{
   .hero__title{ font-size: 1.7rem; }
   .card[style*="grid-column: span 4"]{ grid-column: span 12 !important; }
 }
+/* ---------- PATCH: legibilidad y look profesional (Cayman) ---------- */
+
+/* Fondo claro + texto oscuro garantizado */
+:root{
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --surface2: #f1f5f9;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #dbe3ef;
+  --accent: #1d4ed8;   /* azul más profundo (mejor contraste) */
+  --accent2: #1e40af;
+}
+
+body{
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+/* Header del tema (donde aparece el “Portfolio - …”) */
+.page-header{
+  background: linear-gradient(180deg, #ffffff 0%, #f6f8fb 100%) !important;
+  padding: 1.6rem 1rem 1.25rem !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.project-name{
+  color: var(--text) !important;
+  text-shadow: none !important;
+}
+
+.project-tagline{
+  color: var(--muted) !important;
+}
+
+/* Contenido principal: más “card” y centrado */
+.main-content{
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  padding: 1.25rem 1rem 2rem !important;
+}
+
+/* Títulos SIEMPRE visibles */
+.main-content h1,
+.main-content h2,
+.main-content h3{
+  color: var(--text) !important;
+}
+
+/* Separación real entre secciones (funciona aunque uses Markdown simple) */
+.main-content h2{
+  margin-top: 2.2rem !important;
+  padding-top: 1.2rem !important;
+  border-top: 1px solid var(--border) !important;
+}
+
+/* Enlaces estándar */
+.main-content a{
+  color: var(--accent) !important;
+  text-decoration: none;
+}
+.main-content a:hover{
+  text-decoration: underline;
+}
+
+/* Botones (solo si el link tiene class="btn") */
+.btn{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: .7rem 1rem !important;
+  border-radius: .9rem !important;
+  font-weight: 700 !important;
+  border: 1px solid var(--border) !important;
+  background: var(--surface2) !important;
+  color: var(--text) !important;
+  text-decoration: none !important;
+}
+
+.btn:hover{
+  background: #e9effa !important;
+  border-color: #c7d2fe !important;
+}
+
+.btn--primary{
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #fff !important;
+}
+
+.btn--primary:hover{
+  background: var(--accent2) !important;
+  border-color: var(--accent2) !important;
+}
