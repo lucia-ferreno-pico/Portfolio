@@ -1,10 +1,11 @@
 :root{
-  --bg: #f4efe6;
+  --bg: #F6F8FB;
   --surface: #ffffff;
   --text: #111111;
   --muted: #333333;
-  --border: rgba(17,17,17,.18);
-  --border2: rgba(17,17,17,.28);
+  --border: rgba(17,17,17,.14);
+  --border2: rgba(17,17,17,.22);
+
 
   --btn: #111111;
   --btnHover: #0b0b0b;
@@ -45,7 +46,7 @@ body{
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(244,239,230,.88);
+  background: rgba(246,248,251,.88);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
