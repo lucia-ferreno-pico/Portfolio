@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ site.description | default: '' }}" />
+
+    <!-- Work Sans (similar a dalyabaron.com) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Your custom CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
 
@@ -16,12 +23,12 @@
           <span class="brand__role">Data Analyst</span>
         </a>
 
-       <nav class="nav">
-  <a href="{{ '/about/' | relative_url }}">About</a>
-  <a href="{{ '/projects/' | relative_url }}">Proyectos</a>
-  <a href="{{ '/cv/' | relative_url }}">CV</a>
-  <a href="{{ '/contact/' | relative_url }}">Contacto</a>
-</nav>
+        <nav class="nav">
+          <a href="{{ '/about/' | relative_url }}">About</a>
+          <a href="{{ '/projects/' | relative_url }}">Proyectos</a>
+          <a href="{{ '/cv/' | relative_url }}">CV</a>
+          <a href="{{ '/contact/' | relative_url }}">Contacto</a>
+        </nav>
       </div>
     </header>
 
