@@ -36,8 +36,8 @@ body{
 
 .site-header .container{
   max-width: 100%;
-  padding-left: 84px;
-  padding-right: 84px;
+  padding-left: 56px;
+  padding-right: 110px;
 }
 
 
@@ -196,7 +196,7 @@ p{
 .cta{
   display:flex;
   flex-wrap:wrap;
-  gap: 16px;
+  gap: 24px;
   margin-top: 26px;
   margin-bottom: 26px; 
 }
