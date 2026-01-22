@@ -194,10 +194,30 @@ p{
 .cta{
   display:flex;
   flex-wrap:wrap;
-  gap: 12px;
+  gap: 16px;
   margin-top: 26px;
+  margin-bottom: 18px; 
 }
 
+.hero-links{
+  margin: 0;
+  font-size: 14px;
+}
+
+.hero-links a{
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+
+.hero-links a:visited{
+  color: var(--text);
+}
+
+.hero-links a:hover{
+  opacity: .75;
+}
 .btn{
   display:inline-flex;
   align-items:center;
@@ -305,7 +325,7 @@ p{
   font-weight: 400;
 }
 
-/* Contact */
+
 .contact-line{
   display:flex;
   flex-wrap:wrap;
