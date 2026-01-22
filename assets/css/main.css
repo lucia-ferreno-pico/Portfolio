@@ -134,32 +134,34 @@ p{
   font-weight: 400;
 }
 
-/* Hero */
 .hero{
-  padding: 34px 0 42px;
+  padding: 72px 0 90px;
   border-bottom: 1px solid var(--border);
 }
 
+
 .hero-grid{
   display:grid;
-  grid-template-columns: 280px 1fr;
-  gap: 44px;
-  align-items:center; 
+  grid-template-columns: 360px 1fr;
+  gap: 64px;
+  align-items:center;
 }
 
+
 .hero-copy{
-  max-width: 56ch; 
+  max-width: 52ch; 
 }
 
 .avatar{
-  width: 270px;
-  height: 270px;
+  width: 340px;
+  height: 340px;
   border-radius: 999px;
   object-fit: cover;
   border: 1px solid var(--border);
   background: var(--surface);
-  box-shadow: 0 18px 36px rgba(17,17,17,.12);
+  box-shadow: 0 22px 44px rgba(17,17,17,.12);
 }
+
 
 .hero h1{
   font-size: 52px;
@@ -264,7 +266,7 @@ p{
   text-overflow: ellipsis;
 }
 
-/* Personal boxes */
+
 .personal{
   display:grid;
   grid-template-columns: repeat(12, 1fr);
@@ -291,7 +293,7 @@ p{
   font-weight: 400;
 }
 
-/* Contact */
+
 .contact-line{
   display:flex;
   flex-wrap:wrap;
@@ -325,11 +327,13 @@ p{
 
 
 @media (max-width: 780px){
-  .hero-grid{ grid-template-columns: 1fr; }
-  .avatar{ width: 180px; height: 180px; }
+  .hero{ padding: 44px 0 58px; }
+  .hero-grid{ grid-template-columns: 1fr; gap: 22px; }
+  .avatar{ width: 210px; height: 210px; }
   .hero h1{ font-size: 40px; }
   .card{ grid-column: span 12; }
   .personal .box{ grid-column: span 12; }
 }
+
 
 
