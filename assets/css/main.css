@@ -142,19 +142,22 @@ p{
 
 .hero-grid{
   display:grid;
-  grid-template-columns: 160px 1fr;
-  gap: 28px;
-  align-items:start;
+  grid-template-columns: 220px 1fr;
+  gap: 34px;
+  align-items:center; /* clave: alinea foto y texto como “landing” */
 }
 
+
 .avatar{
-  width: 150px;
-  height: 150px;
+  width: 210px;
+  height: 210px;
   border-radius: 999px;
   object-fit: cover;
   border: 1px solid var(--border);
   background: var(--surface);
+  box-shadow: 0 14px 30px rgba(17,17,17,.10); /* acabado elegante */
 }
+
 
 .hero h1{
   font-size: 52px;
@@ -321,7 +324,7 @@ p{
 /* Responsive */
 @media (max-width: 780px){
   .hero-grid{ grid-template-columns: 1fr; }
-  .avatar{ width: 130px; height: 130px; }
+  .avatar{ width: 160px; height: 160px; }
   .hero h1{ font-size: 40px; }
   .card{ grid-column: span 12; }
   .personal .box{ grid-column: span 12; }
