@@ -9,7 +9,9 @@
   --btn: #111111;
   --btnHover: #0b0b0b;
   --radius: 18px;
-  --max: 880px;
+
+  /* Más ancho global para que el H1 no rompa */
+  --max: 1180px;
 }
 
 /* Reset */
@@ -29,6 +31,13 @@ body{
   max-width: var(--max);
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* Header más “full width” (más aire a los lados, como Dalya) */
+.site-header .container{
+  max-width: 100%;
+  padding-left: 56px;
+  padding-right: 56px;
 }
 
 /* Header / Nav */
@@ -59,7 +68,7 @@ body{
 
 .brand__name{
   font-family: "Work Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-weight: 600;          /* semibold */
+  font-weight: 600;
   letter-spacing: -0.01em;
   font-size: 17px;
 }
@@ -97,7 +106,7 @@ h1,h2,h3{
   letter-spacing: -0.02em;
 }
 
-h1{ font-weight: 600; }  /* semibold */
+h1{ font-weight: 600; }
 h2{ font-weight: 600; }
 h3{ font-weight: 600; }
 
@@ -134,11 +143,11 @@ p{
   font-weight: 400;
 }
 
+/* Hero */
 .hero{
   padding: 86px 0 96px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: none; /* evita doble línea con el footer */
 }
-
 
 .hero-grid{
   display:grid;
@@ -147,9 +156,8 @@ p{
   align-items:center;
 }
 
-
 .hero-copy{
-  max-width: 46ch; 
+  max-width: 46ch;
 }
 
 .avatar{
@@ -162,7 +170,6 @@ p{
   box-shadow: 0 24px 52px rgba(17,17,17,.12);
 }
 
-
 .hero h1{
   font-size: 60px;
   line-height: 1.02;
@@ -170,9 +177,14 @@ p{
   font-weight: 600;
 }
 
+/* En escritorio: que el nombre no parta en dos líneas */
+@media (min-width: 900px){
+  .hero h1{ white-space: nowrap; }
+}
+
 .hero .subtitle{
   font-size: 16px;
-  font-weight: 600;     
+  font-weight: 600;
   margin-bottom: 14px;
   color: var(--text);
 }
@@ -264,7 +276,7 @@ p{
   text-overflow: ellipsis;
 }
 
-
+/* Personal */
 .personal{
   display:grid;
   grid-template-columns: repeat(12, 1fr);
@@ -291,7 +303,7 @@ p{
   font-weight: 400;
 }
 
-
+/* Contact */
 .contact-line{
   display:flex;
   flex-wrap:wrap;
@@ -312,7 +324,7 @@ p{
   font-weight: 500;
 }
 
-
+/* Footer */
 .site-footer{ padding: 18px 0; }
 
 .footer-inner{
@@ -323,13 +335,19 @@ p{
   font-weight: 400;
 }
 
-
+/* Responsive */
 @media (max-width: 780px){
+  /* en móvil, el header vuelve al padding normal */
+  .site-header .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .hero{ padding: 46px 0 60px; }
   .hero-grid{ grid-template-columns: 1fr; gap: 22px; }
   .avatar{ width: 220px; height: 220px; }
   .hero h1{ font-size: 40px; }
+
   .card{ grid-column: span 12; }
   .personal .box{ grid-column: span 12; }
 }
-
