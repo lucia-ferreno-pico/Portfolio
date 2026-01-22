@@ -7,7 +7,7 @@ title: Home
   <div class="hero-grid">
     <img class="avatar" src="{{ '/assets/img/profile/avatar.png' | relative_url }}" alt="Foto de perfil de Lucía Ferreño">
 
-    <div>
+    <div class="hero-copy">
       <h1>Lucía Ferreño</h1>
 
       <p class="subtitle">Data Analyst orientada a BI y analítica aplicada.</p>
