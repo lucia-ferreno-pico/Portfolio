@@ -37,10 +37,10 @@ body{
 }
 .header-inner{
   display:flex;
-  align-items:baseline;
+  align-items:center;
   justify-content:space-between;
-  gap: 16px;
-  padding: 16px 0;
+  gap: 18px;
+  padding: 14px 0;
 }
 
 .brand{
@@ -54,7 +54,7 @@ body{
   font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
   letter-spacing: -0.02em;
-  font-size: 18px;
+  font-size: 17px;
 }
 .brand__role{
   font-size: 13px;
@@ -71,7 +71,7 @@ body{
   text-decoration: none;
   border-bottom: 1px solid rgba(17,17,17,.25);
   padding-bottom: 1px;
-  font-size: 14px;
+  font-size: 13px;
 }
 .nav a:hover{
   border-bottom-color: rgba(17,17,17,.75);
