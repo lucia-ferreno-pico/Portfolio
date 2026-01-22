@@ -8,7 +8,7 @@ title: Home
     <img class="avatar" src="{{ '/assets/img/profile/avatar.png' | relative_url }}" alt="Foto de perfil de Lucía Ferreño">
 
     <div>
-      <h1>Lucía Ferreño Pico</h1>
+      <h1>Lucía Ferreño</h1>
 
       <p class="subtitle">
         Data Analyst orientada a BI y analítica aplicada.
@@ -24,11 +24,12 @@ title: Home
         <a class="btn" href="https://www.linkedin.com/in/lucia-ferreno-data-analyst" target="_blank" rel="noopener">LinkedIn</a>
       </div>
 
-      <div class="cta" style="margin-top:10px;">
-        <a class="btn" href="{{ '/about/' | relative_url }}">A bit about me</a>
-        <a class="btn" href="{{ '/contact/' | relative_url }}">Contacto</a>
-      </div>
+      <p style="margin-top:14px;">
+        <a href="{{ '/about/' | relative_url }}">About</a> ·
+        <a href="{{ '/projects/' | relative_url }}">Proyectos</a> ·
+        <a href="{{ '/cv/' | relative_url }}">CV</a> ·
+        <a href="{{ '/contact/' | relative_url }}">Contacto</a>
+      </p>
     </div>
   </div>
 </section>
-
