@@ -8,7 +8,7 @@ title: Home
     <img class="avatar" src="{{ '/assets/img/profile/avatar.png' | relative_url }}" alt="Foto de perfil de Lucía Ferreño">
 
     <div>
-      <h1>Lucía Ferreño Pico</h1>
+      <h1>Lucía Ferreño</h1>
 
       <p class="subtitle">Data Analyst orientada a BI y analítica aplicada.</p>
 
@@ -30,4 +30,3 @@ title: Home
     </div>
   </div>
 </section>
-
