@@ -2,33 +2,38 @@
   title: "Dashboard de Ventas y Estacionalidad"
   desc: "Modelo estrella, KPIs, segmentación por provincia/producto y análisis temporal."
   href: "/04_powerbi/dashboard_ventas/"
-  image: "/assets/img/sql/ventas_provincias/parte1_series.png"
+  repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/04_powerbi/dashboard_ventas"
+  order: 1
   tags: ["Modelado", "DAX", "Time Intelligence", "KPIs"]
 
 - category: "SQL"
   title: "Consultas analíticas de ventas"
   desc: "Ventanas, rankings, cohortes y controles de calidad de datos."
   href: "/01_sql/ventas_provincias/"
-  image: "/assets/img/sql/ventas_provincias/parte1_series.png"
+  repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/01_sql/ventas_provincias"
+  order: 1
   tags: ["Window Functions", "Ranking", "QA", "Análisis"]
 
 - category: "Python"
   title: "Actividad INA (FIFA)"
   desc: "EDA y modelado (regresión lineal), preparación de variables y evaluación."
   href: "/02_python/actividad_ina_fifa/"
-  image: "/assets/img/sql/ventas_provincias/parte2_regresion.png"
+  repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/02_python/actividad_ina_fifa"
+  order: 1
   tags: ["EDA", "Regresión", "Feature Engineering", "Evaluación"]
 
 - category: "Python"
   title: "CRM (AdventureWorks)"
   desc: "Visión 360 y segmentación de clientes con K-Means (Elbow + Silhouette)."
   href: "/05_crm/adventureworks_clientes/"
-  image: "/assets/img/sql/ventas_provincias/parte3_clasificacion.png"
+  repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/05_crm/adventureworks_clientes"
+  order: 2
   tags: ["Clustering", "K-Means", "Segmentación", "Recomendaciones"]
 
 - category: "R"
   title: "Proyecto transversal — AdventureWorks"
   desc: "Exploratorio: facturación por país, tendencias, precios por color y perfil de compradores."
   href: "/03_r/adventureworks_transversal/"
-  image: "/assets/img/sql/ventas_provincias/parte1_series.png"
+  repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/03_r/adventureworks_transversal"
+  order: 1
   tags: ["EDA", "Series", "Visualización", "Negocio"]
