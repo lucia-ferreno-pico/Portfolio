@@ -19,6 +19,10 @@ title: Home
 <p>
   Aunque este portfolio muestra mis habilidades técnicas, el valor diferencial que intento aportar en cada proyecto es convertir la información en una historia clara y accionable que facilite decidir al negocio.
 </p>
+.hero-copy p{
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 
       <div class="cta">
