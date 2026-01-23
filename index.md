@@ -10,14 +10,16 @@ title: Home
     <div class="hero-copy">
       <h1>Lucía Ferreño</h1>
 
-      <p class="subtitle">Data Analyst orientada a BI y analítica aplicada.</p>
+      <p class="subtitle">Junior Data Analyst orientada a BI y analítica aplicada.</p>
 
       <p>
-        Soy Analista de Datos Junior orientada a BI. Tras más de 16 años en fiscalidad y finanzas, en 2024 di un giro profesional hacia inteligencia de negocio para contribuir a que las decisiones se tomen con métricas consistentes y datos fiables. En 2025 cursé el Máster Universitario en Inteligencia de Negocio y Analítica de Datos.
-
-Estás entrando en mi portfolio, aquí reúno una selección de proyectos (SQL, Power BI, Python y R) que representan el tipo de trabajo que disfruto y que quiero aportar a un equipo.
-
-Aunque este portfolio muestra mis habilidades técnicas, el valor diferencial que intento aportar en cada proyecto es convertir la información en una historia clara y accionable, y devolver esa claridad al negocio en forma de dashboards y análisis que faciliten decidir.
+        Tras más de 16 años en fiscalidad y finanzas, en 2024 di un giro profesional hacia inteligencia de negocio para contribuir a que las decisiones se tomen con métricas consistentes y datos fiables. 
+        
+        En 2025 cursé el Máster Universitario en Inteligencia de Negocio y Analítica de Datos.
+        
+        Estás entrando en mi portfolio, aquí reúno una selección de proyectos (SQL, Power BI, Python y R) que representan el tipo de trabajo que disfruto y que quiero aportar a un equipo.
+        
+        Aunque este portfolio muestra mis habilidades técnicas, el valor diferencial que intento aportar en cada proyecto es convertir la información en una historia clara y accionable que faciliten decidir a negocio.
         
       </p>
 
