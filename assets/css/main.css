@@ -156,18 +156,23 @@ p{
 
 .hero-grid{
   display:grid;
-  grid-template-columns: 420px 1fr;
+  grid-template-columns: 520px 1fr;
   gap: 78px;
   align-items:center;
 }
 
 .hero-copy{
-  max-width: 46ch;
+  max-width: 56ch;
+}
+
+.hero-copy p{
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .avatar{
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   border-radius: 999px;
   object-fit: cover;
   border: 1px solid var(--border);
@@ -395,7 +400,7 @@ p{
 
   .hero{ padding: 46px 0 60px; }
   .hero-grid{ grid-template-columns: 1fr; gap: 22px; }
-  .avatar{ width: 220px; height: 220px; }
+  .avatar{ width: 260px; height: 260px; }
   .hero h1{ font-size: 40px; }
 
   .card{ grid-column: span 12; }
