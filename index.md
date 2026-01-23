@@ -10,7 +10,7 @@ title: Home
     <div class="hero-copy">
       <h1>Lucía Ferreño</h1>
 
-      <p class="subtitle">Junior Data Analyst orientada a BI y analítica aplicada.</p>
+      <p class="subtitle">Analista de datos junior enfocada en BI y analítica aplicada.</p>
 
     <p>
   Estás entrando en mi portfolio, aquí reúno una selección de proyectos (SQL, Power BI, Python y R) que representan el tipo de trabajo que disfruto y que quiero aportar a un equipo.
