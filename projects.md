@@ -10,29 +10,97 @@ permalink: /projects/
     <span>SQL · Power BI · Python · R</span>
   </div>
 
-  {% assign order = "SQL,Power BI,Python,R" | split: "," %}
+  <p class="subtitle" style="max-width: 70ch;">
+    Una selección de proyectos agrupados por tecnología. Cada proyecto incluye una página de detalle y acceso al código.
+  </p>
 
-  {% for cat in order %}
-    {% assign items = site.data.projects | where: "category", cat %}
-    {% if items and items.size > 0 %}
+  {% assign cats = "Power BI,SQL,Python,R" | split: "," %}
 
-      <div class="section" style="padding: 22px 0; border-bottom: none;">
-        <div class="section-title" style="margin-bottom: 12px;">
-          <h2>{{ cat }}</h2>
-          <span>{{ items.size }} proyecto(s)</span>
+  {% assign featured = site.data.projects | where: "featured", true | sort: "featured_order" %}
+  {% if featured and featured.size > 0 %}
+  <div class="projects-featured">
+    <div class="section-title" style="margin-top: 8px;">
+      <h2>Destacado</h2>
+      <span>{{ featured.size }} proyecto(s)</span>
+    </div>
+
+    <div class="projects-list">
+      {% for p in featured %}
+      <div class="project-card">
+        <div class="project-card__head">
+          <p class="kicker">{{ p.category }}</p>
+          <h3 class="title">{{ p.title }}</h3>
+          <p class="desc">{{ p.desc }}</p>
         </div>
 
-        <div class="grid">
-          {% for p in items %}
-            <a class="card" href="{{ p.href | relative_url }}">
-              <p class="kicker">{{ p.category }}</p>
-              <h3 class="title">{{ p.title }}</h3>
-              <p class="desc">{{ p.desc }}</p>
-            </a>
-          {% endfor %}
+        <div class="project-card__actions">
+          <a class="btn btn--primary" href="{{ p.href | relative_url }}">Ver proyecto</a>
+          {% if p.repo %}
+          <a class="btn" href="{{ p.repo }}" target="_blank" rel="noopener">Ver código</a>
+          {% endif %}
         </div>
       </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 
-    {% endif %}
-  {% endfor %}
+  <div class="projects-tabs" role="tablist" aria-label="Categorías de proyectos">
+    <button class="tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+    {% for c in cats %}
+      <button class="tab" type="button" data-filter="{{ c | downcase | replace: ' ', '' }}" role="tab" aria-selected="false">{{ c }}</button>
+    {% endfor %}
+  </div>
+
+  <div class="projects-list">
+    {% for c in cats %}
+      {% assign items = site.data.projects | where: "category", c | sort: "order" %}
+      {% for p in items %}
+      <div class="project-card" data-cat="{{ c | downcase | replace: ' ', '' }}">
+        <div class="project-card__head">
+          <p class="kicker">{{ p.category }}</p>
+          <h3 class="title">{{ p.title }}</h3>
+          <p class="desc">{{ p.desc }}</p>
+        </div>
+
+        <div class="project-card__actions">
+          <a class="btn btn--primary" href="{{ p.href | relative_url }}">Ver proyecto</a>
+          {% if p.repo %}
+          <a class="btn" href="{{ p.repo }}" target="_blank" rel="noopener">Ver código</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
 </section>
+
+<script>
+  (function () {
+    const tabs = document.querySelectorAll('.projects-tabs .tab');
+    const cards = document.querySelectorAll('.project-card[data-cat]');
+
+    function setActive(btn) {
+      tabs.forEach(t => {
+        t.classList.toggle('is-active', t === btn);
+        t.setAttribute('aria-selected', t === btn ? 'true' : 'false');
+      });
+    }
+
+    function filter(cat) {
+      cards.forEach(card => {
+        const c = card.getAttribute('data-cat');
+        const show = (cat === 'all') || (c === cat);
+        card.style.display = show ? '' : 'none';
+      });
+    }
+
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.getAttribute('data-filter');
+        setActive(btn);
+        filter(cat);
+      });
+    });
+  })();
+</script>
