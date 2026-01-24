@@ -1,106 +1,100 @@
 ---
 layout: default
 title: Proyectos
-permalink: /projects/
 ---
 
-<section class="section">
+<section class="section projects">
   <div class="section-title">
     <h2>Proyectos</h2>
     <span>SQL · Power BI · Python · R</span>
   </div>
 
-  <p class="subtitle" style="max-width: 70ch;">
+  <p class="projects-lead">
     Una selección de proyectos agrupados por tecnología. Cada proyecto incluye una página de detalle y acceso al código.
   </p>
 
-  {% assign cats = "Power BI,SQL,Python,R" | split: "," %}
-
-  {% assign featured = site.data.projects | where: "featured", true | sort: "featured_order" %}
-  {% if featured and featured.size > 0 %}
-  <div class="projects-featured">
-    <div class="section-title" style="margin-top: 8px;">
-      <h2>Destacado</h2>
-      <span>{{ featured.size }} proyecto(s)</span>
-    </div>
-
-    <div class="projects-list">
-      {% for p in featured %}
-      <div class="project-card">
-        <div class="project-card__head">
-          <p class="kicker">{{ p.category }}</p>
-          <h3 class="title">{{ p.title }}</h3>
-          <p class="desc">{{ p.desc }}</p>
-        </div>
-
-        <div class="project-card__actions">
-          <a class="btn btn--primary" href="{{ p.href | relative_url }}">Ver proyecto</a>
-          {% if p.repo %}
-          <a class="btn" href="{{ p.repo }}" target="_blank" rel="noopener">Ver código</a>
-          {% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  {% endif %}
-
-  <div class="projects-tabs" role="tablist" aria-label="Categorías de proyectos">
-    <button class="tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
-    {% for c in cats %}
-      <button class="tab" type="button" data-filter="{{ c | downcase | replace: ' ', '' }}" role="tab" aria-selected="false">{{ c }}</button>
-    {% endfor %}
+  <div class="filters" aria-label="Filtrar proyectos por categoría">
+    <button class="chip is-active" type="button" data-filter="All">All</button>
+    <button class="chip" type="button" data-filter="Power BI">Power BI</button>
+    <button class="chip" type="button" data-filter="SQL">SQL</button>
+    <button class="chip" type="button" data-filter="Python">Python</button>
+    <button class="chip" type="button" data-filter="R">R</button>
   </div>
 
-  <div class="projects-list">
-    {% for c in cats %}
-      {% assign items = site.data.projects | where: "category", c | sort: "order" %}
+  {% assign cats = "SQL,Power BI,Python,R" | split: "," %}
+
+  <div class="projects-grid">
+    {% for cat in cats %}
+      {% assign items = site.data.projects | where: "category", cat | sort: "order" %}
       {% for p in items %}
-      <div class="project-card" data-cat="{{ c | downcase | replace: ' ', '' }}">
-        <div class="project-card__head">
-          <p class="kicker">{{ p.category }}</p>
-          <h3 class="title">{{ p.title }}</h3>
-          <p class="desc">{{ p.desc }}</p>
-        </div>
 
-        <div class="project-card__actions">
-          <a class="btn btn--primary" href="{{ p.href | relative_url }}">Ver proyecto</a>
-          {% if p.repo %}
-          <a class="btn" href="{{ p.repo }}" target="_blank" rel="noopener">Ver código</a>
-          {% endif %}
-        </div>
-      </div>
+        {% comment %}
+        Imagen por categoría (sin tocar projects.yml)
+        Guardar en /assets/img/tools/
+        {% endcomment %}
+
+        {% assign tool_img = "" %}
+        {% if p.category == "SQL" %}
+          {% assign tool_img = "/assets/img/tools/sql.png" %}
+        {% elsif p.category == "Power BI" %}
+          {% assign tool_img = "/assets/img/tools/powerbi.png" %}
+        {% elsif p.category == "Python" %}
+          {% assign tool_img = "/assets/img/tools/python.png" %}
+        {% elsif p.category == "R" %}
+          {% assign tool_img = "/assets/img/tools/rstudio.png" %}
+        {% endif %}
+
+        <article class="project-card" data-category="{{ p.category }}">
+          <div class="project-media">
+            {% if tool_img != "" %}
+              <img class="project-img" src="{{ tool_img | relative_url }}" alt="Imagen de {{ p.category }}">
+            {% endif %}
+          </div>
+
+          <div class="project-body">
+            <div class="project-top">
+              <div class="project-cat">{{ p.category }}</div>
+            </div>
+
+            <h3 class="project-title">{{ p.title }}</h3>
+            <p class="project-desc">{{ p.desc }}</p>
+
+            {% if p.tags %}
+              <div class="tags">
+                {% for t in p.tags %}
+                  <span class="tag">{{ t }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+
+            <div class="project-actions">
+              <a class="btn btn--primary btn--sm" href="{{ p.href | relative_url }}">Ver proyecto</a>
+              {% if p.repo %}
+                <a class="btn btn--sm" href="{{ p.repo }}" target="_blank" rel="noopener">Ver código</a>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+
       {% endfor %}
     {% endfor %}
   </div>
 </section>
 
 <script>
-  (function () {
-    const tabs = document.querySelectorAll('.projects-tabs .tab');
-    const cards = document.querySelectorAll('.project-card[data-cat]');
+  document.addEventListener("DOMContentLoaded", function () {
+    const chips = document.querySelectorAll(".chip[data-filter]");
+    const cards = document.querySelectorAll(".project-card[data-category]");
 
-    function setActive(btn) {
-      tabs.forEach(t => {
-        t.classList.toggle('is-active', t === btn);
-        t.setAttribute('aria-selected', t === btn ? 'true' : 'false');
-      });
-    }
-
-    function filter(cat) {
+    function setFilter(filter) {
+      chips.forEach(c => c.classList.toggle("is-active", c.dataset.filter === filter));
       cards.forEach(card => {
-        const c = card.getAttribute('data-cat');
-        const show = (cat === 'all') || (c === cat);
-        card.style.display = show ? '' : 'none';
+        const ok = (filter === "All") || (card.dataset.category === filter);
+        card.style.display = ok ? "" : "none";
       });
     }
 
-    tabs.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const cat = btn.getAttribute('data-filter');
-        setActive(btn);
-        filter(cat);
-      });
-    });
-  })();
+    chips.forEach(chip => chip.addEventListener("click", () => setFilter(chip.dataset.filter)));
+    setFilter("All");
+  });
 </script>
