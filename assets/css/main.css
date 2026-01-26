@@ -808,7 +808,7 @@ main.container .page{
 
 /* “PROYECTOS” más grande y más editorial */
 .projects-page .section-title h2{
-  font-size: 16px;         /* antes 14px */
+  font-size: 42px;         /* antes 14px */
   letter-spacing: .14em;   /* más “editorial” */
 }
 
