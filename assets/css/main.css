@@ -833,10 +833,10 @@ main.container .page{
 
 /* Tabs con más separación y mejor “respiración” */
 .projects-page .projects-tabs{
-  margin-top: 18px;
-  margin-bottom: 26px;
+  margin-top: 38px;
+  margin-bottom: 38px;
   display: flex;
-  gap: 12px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
