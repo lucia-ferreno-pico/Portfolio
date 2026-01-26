@@ -1136,7 +1136,7 @@ main.container .page{
   max-width: 100%;
   padding-left: 56px;
   padding-right: 56px;
-}
+} 
 
 /* Alinea el texto de tecnologías a la derecha y lo “pega” al mismo borde que el menú */
 .section--projects .projects-hero{
