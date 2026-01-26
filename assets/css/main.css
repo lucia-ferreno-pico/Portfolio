@@ -793,3 +793,129 @@ main.container .page{
 .projects-page .card{
   border-radius: 0 !important;
 }
+/* =========================
+   PROJECTS (más aire y “landing”)
+   ========================= */
+
+.projects-page{
+  /* más aire arriba (lo que marcaste en rojo) */
+  padding-top: 70px;
+}
+
+.projects-page .section-title{
+  /* separa claramente título/subtítulo/filtros */
+  margin-bottom: 22px;
+}
+
+/* “PROYECTOS” más grande y más editorial */
+.projects-page .section-title h2{
+  font-size: 16px;         /* antes 14px */
+  letter-spacing: .14em;   /* más “editorial” */
+}
+
+/* “SQL · Power BI · Python · R” más discreto y mejor alineado */
+.projects-page .section-title span{
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  opacity: .85;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+/* Subtítulo con más aire y legibilidad */
+.projects-page p.subtitle{
+  margin-top: 6px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 68ch;
+}
+
+/* Tabs con más separación y mejor “respiración” */
+.projects-page .projects-tabs{
+  margin-top: 18px;
+  margin-bottom: 26px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Grid de cards: más espacio entre tarjetas */
+.projects-page .projects-list{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 22px;
+}
+
+/* Dos columnas en escritorio, una en móvil */
+.projects-page .project-card{
+  grid-column: span 6;
+  padding: 26px;
+  border-radius: 0; /* cuadradas (como pediste) */
+}
+
+/* Imagen más “banner” y limpia */
+.projects-page .project-card__media{
+  margin: -26px -26px 18px;   /* imagen a sangre dentro de la card */
+  border-bottom: 1px solid var(--border);
+}
+
+.projects-page .project-card__media img{
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* Mejor jerarquía textual */
+.projects-page .project-card .kicker{
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  opacity: .8;
+  margin-bottom: 10px;
+}
+
+.projects-page .project-card .title{
+  font-size: 20px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.projects-page .project-card .desc{
+  font-size: 15px;
+  line-height: 1.75;
+  margin-bottom: 16px;
+  -webkit-line-clamp: 2; /* que no quede “apelotonado” */
+}
+
+/* Tags con aire */
+.projects-page .project-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 18px;
+}
+
+/* Acciones más separadas */
+.projects-page .project-card__actions{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .projects-page{
+    padding-top: 44px;
+  }
+  .projects-page .project-card{
+    grid-column: span 12;
+  }
+  .projects-page .project-card__media img{
+    height: 170px;
+  }
+}
