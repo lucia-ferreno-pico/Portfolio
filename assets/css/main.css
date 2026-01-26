@@ -776,32 +776,20 @@ main.container .page{
   .projects-lede{ font-size: 15px; }
 }
 /* =========================
-   OVERRIDE: Projects sin esquinas redondas
+   Projects: cards cuadradas (sin tocar botones)
    ========================= */
 
-.projects-page .project-card,
+.projects-page .project-card{
+  border-radius: 0 !important;
+}
+
+/* Si tu card tiene “caja” interna (media/imagen), la cuadramos también */
 .projects-page .project-card__media,
-.projects-page .project-card__body{
+.projects-page .project-card__media img{
   border-radius: 0 !important;
 }
 
-/* Si tu grid usa .card en projects, también lo cubrimos */
+/* Si en algún caso estás usando .card en projects, también lo cubrimos */
 .projects-page .card{
-  border-radius: 0 !important;
-}
-
-/* Tabs (filtros) cuadradas (opcional) */
-.projects-page .projects-tabs .tab{
-  border-radius: 0 !important;
-}
-
-/* Chips/tags cuadradas (opcional) */
-.projects-page .project-tags .tag,
-.projects-page .project-pill{
-  border-radius: 0 !important;
-}
-
-/* Botones cuadradas (opcional; si quieres mantener pill en botones, dímelo) */
-.projects-page .btn{
   border-radius: 0 !important;
 }
