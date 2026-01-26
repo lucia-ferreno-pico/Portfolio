@@ -4,46 +4,60 @@ title: Proyectos
 permalink: /projects/
 ---
 
-<section class="section section--projects">
-  <div class="container container--projects">
+<section class="section projects-page">
+  <div class="projects-header">
+    <div class="section-title">
+      <h2>Proyectos</h2>
+      <span>SQL · Power BI · Python · R</span>
+    </div>
 
-    <header class="projects-hero">
-      <div class="projects-hero__top">
-        <p class="projects-kicker">PROYECTOS</p>
-        <p class="projects-tech">SQL · Power BI · Python · R</p>
-      </div>
+    <p class="projects-lede">
+      Una selección de proyectos agrupados por tecnología. Cada proyecto incluye una página de detalle y acceso al código.
+    </p>
 
-      <p class="projects-lede">
-        Una selección de proyectos agrupados por tecnología. Cada proyecto incluye una página de detalle y acceso al código.
-      </p>
+    {% assign cats = "Power BI,SQL,Python,R" | split: "," %}
+    <div class="projects-tabs" role="tablist" aria-label="Categorías de proyectos">
+      <button class="tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">Todos</button>
+      {% for c in cats %}
+        <button class="tab" type="button" data-filter="{{ c | downcase | replace: ' ', '' }}" role="tab" aria-selected="false">
+          {{ c }}
+        </button>
+      {% endfor %}
+    </div>
+  </div>
 
-      {% assign cats = "Power BI,SQL,Python,R" | split: "," %}
+  <div class="projects-grid">
+    {% for c in cats %}
+      {% assign items = site.data.projects | where: "category", c | sort: "order" %}
+      {% for p in items %}
 
-      <div class="projects-tabs" role="tablist" aria-label="Categorías de proyectos">
-        <button class="tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">Todos</button>
-        {% for c in cats %}
-          <button class="tab" type="button" data-filter="{{ c | downcase | replace: ' ', '' }}" role="tab" aria-selected="false">{{ c }}</button>
-        {% endfor %}
-      </div>
-    </header>
-
-    {% assign items_all = site.data.projects | sort: "order" %}
-
-    <div class="projects-feed" aria-live="polite">
-      {% for p in items_all %}
-        {% assign cat_key = p.category | downcase | replace: ' ', '' %}
-        {% if cat_key == 'r' %}
-          {% assign cat_key = 'rstudio' %}
+        {% assign tech_img = p.image %}
+        {% if tech_img == nil or tech_img == "" %}
+          {% if p.category == "Power BI" %}
+            {% assign tech_img = "/assets/img/projects/powerbi.png" %}
+          {% elsif p.category == "SQL" %}
+            {% assign tech_img = "/assets/img/projects/sql.png" %}
+          {% elsif p.category == "Python" %}
+            {% assign tech_img = "/assets/img/projects/python.png" %}
+          {% elsif p.category == "R" %}
+            {% assign tech_img = "/assets/img/projects/rstudio.png" %}
+          {% endif %}
         {% endif %}
 
-        <article class="project-row" data-cat="{{ p.category | downcase | replace: ' ', '' }}">
-          <div class="project-row__content">
-            <p class="project-meta">{{ p.category }}</p>
-            <h3 class="project-title">{{ p.title }}</h3>
+        <article class="project-card" data-cat="{{ c | downcase | replace: ' ', '' }}">
+          <a class="project-media" href="{{ p.href | relative_url }}" aria-label="Abrir proyecto: {{ p.title }}">
+            <img src="{{ tech_img | relative_url }}" alt="" loading="lazy">
+          </a>
+
+          <div class="project-body">
+            <p class="project-kicker">{{ p.category }}</p>
+            <h3 class="project-title">
+              <a href="{{ p.href | relative_url }}">{{ p.title }}</a>
+            </h3>
             <p class="project-desc">{{ p.desc }}</p>
 
             {% if p.tags %}
-            <div class="project-tags" aria-label="Tecnologías">
+            <div class="project-tags" aria-label="Tecnologías y técnicas">
               {% for t in p.tags %}
                 <span class="tag">{{ t }}</span>
               {% endfor %}
@@ -57,25 +71,17 @@ permalink: /projects/
               {% endif %}
             </div>
           </div>
-
-          <div class="project-row__media" aria-hidden="true">
-            <img
-              src="{{ p.image | default: '/assets/img/projects/' | append: cat_key | append: '.png' | relative_url }}"
-              alt=""
-              loading="lazy"
-            >
-          </div>
         </article>
-      {% endfor %}
-    </div>
 
+      {% endfor %}
+    {% endfor %}
   </div>
 </section>
 
 <script>
   (function () {
     const tabs = document.querySelectorAll('.projects-tabs .tab');
-    const rows = document.querySelectorAll('.project-row[data-cat]');
+    const cards = document.querySelectorAll('.project-card[data-cat]');
 
     function setActive(btn) {
       tabs.forEach(t => {
@@ -85,10 +91,10 @@ permalink: /projects/
     }
 
     function filter(cat) {
-      rows.forEach(row => {
-        const c = row.getAttribute('data-cat');
+      cards.forEach(card => {
+        const c = card.getAttribute('data-cat');
         const show = (cat === 'all') || (c === cat);
-        row.style.display = show ? '' : 'none';
+        card.style.display = show ? '' : 'none';
       });
     }
 
