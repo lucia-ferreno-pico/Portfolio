@@ -619,8 +619,8 @@ main.container .page{
 }
 
 .projects-lede{
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin-top: 64px;
+  margin-bottom: 78px;
   max-width: 70ch;
   color: var(--muted);
   font-size: 16px;
