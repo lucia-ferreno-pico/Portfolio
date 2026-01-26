@@ -836,7 +836,7 @@ main.container .page{
   margin-top: 38px;
   margin-bottom: 38px;
   display: flex;
-  gap: 24px;
+  gap: 54px;
   flex-wrap: wrap;
 }
 
