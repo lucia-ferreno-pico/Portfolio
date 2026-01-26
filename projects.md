@@ -12,7 +12,11 @@ permalink: /projects/
     </div>
 
     <p class="projects-lede">
+      
+      
       Una selección de proyectos agrupados por tecnología. Cada proyecto incluye una página de detalle y acceso al código.
+
+      
     </p>
 
     {% assign cats = "Power BI,SQL,Python,R" | split: "," %}
