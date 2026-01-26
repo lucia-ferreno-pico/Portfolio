@@ -619,7 +619,7 @@ main.container .page{
 }
 
 .projects-lede{
-  margin-top: 12px;
+  margin-top: 30px;
   margin-bottom: 0;
   max-width: 70ch;
   color: var(--muted);
@@ -803,7 +803,7 @@ main.container .page{
 
 .projects-page .section-title{
   /* separa claramente título/subtítulo/filtros */
-  margin-bottom: 22px;
+  margin-bottom: 38px;
 }
 
 /* “PROYECTOS” más grande y más editorial */
