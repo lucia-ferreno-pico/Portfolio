@@ -1137,36 +1137,68 @@ main.container .page{
   padding-left: 56px;
   padding-right: 56px;
 } 
+/* =========================
+   PROJECTS: título + tech alineado
+   (para <section class="section projects-page">)
+   ========================= */
 
-/* Alinea el texto de tecnologías a la derecha y lo “pega” al mismo borde que el menú */
-.section--projects .projects-hero{
-  max-width: none; /* quita el límite de 1080px para que pueda llegar al borde derecho */
+/* Título "PROYECTOS" a 42px */
+.projects-page .section-title h2{
+  font-size: 42px !important;
+  letter-spacing: .10em !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
 }
 
-.section--projects .projects-hero__top{
-  width: 100%;
+/* Lleva el header interno de Projects al mismo “borde” del header superior */
+.projects-page .section-title{
+  /* saca el bloque del ancho del container para que llegue al borde */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  /* mismos paddings que tu header */
+  padding-left: 56px;
+  padding-right: 110px;
+
+  align-items: baseline;
 }
 
-.section--projects .projects-tech{
+/* Tech a la derecha */
+.projects-page .section-title span{
   margin-left: auto;
   text-align: right;
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: .10em;
+  font-size: 12px;
+  opacity: .85;
+}
+
+/* Ajuste fino: que el texto termine debajo de "About"
+   (ajusta este valor si queda bajo "Proyectos/CV/Contacto") */
+:root{ --projects-tech-shift: -260px; }
+.projects-page .section-title span{
+  transform: translateX(var(--projects-tech-shift));
+}
+
+/* Cards cuadradas SOLO en projects */
+.projects-page .project-card{
+  border-radius: 0 !important;
 }
 
 /* Mobile */
 @media (max-width: 780px){
-  .container--projects{
+  .projects-page .section-title{
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .section--projects .projects-hero__top{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-  .section--projects .projects-tech{
-    margin-left: 0;
+  :root{ --projects-tech-shift: 0px; }
+  .projects-page .section-title span{
     text-align: left;
     white-space: normal;
+    transform: none;
   }
 }
+
