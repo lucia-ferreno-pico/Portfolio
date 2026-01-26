@@ -525,8 +525,8 @@ main.container .page{
 
 /* 2) Cabecera con más separación */
 .page-head{
-  padding-bottom: 22px;
-  margin-bottom: 28px;
+  padding-bottom: 32px;
+  margin-bottom: 38px;
 }
 
 .page-title{
@@ -659,10 +659,10 @@ main.container .page{
 }
 
 .projects-grid{
-  margin-top: 26px;
+  margin-top: 46px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 26px;
+  gap: 46px;
 }
 
 /* Card */
