@@ -1203,6 +1203,7 @@ projects-page .projects-title{
   max-width: 70ch;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 /* Centra SOLO los botones */
