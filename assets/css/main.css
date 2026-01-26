@@ -1124,3 +1124,49 @@ main.container .page{
     font-size: 22px;
   }
 }
+/* Projects: ajustes finos de cabecera */
+.section--projects .projects-kicker{
+  font-size: 42px;
+  letter-spacing: -0.02em; /* opcional: más editorial */
+  text-transform: none;     /* opcional: si no quieres mayúsculas */
+}
+
+/* Haz que el contenedor de Projects use el mismo padding lateral que el header */
+.container--projects{
+  max-width: 100%;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+/* Alinea el texto de tecnologías a la derecha y lo “pega” al mismo borde que el menú */
+.section--projects .projects-hero{
+  max-width: none; /* quita el límite de 1080px para que pueda llegar al borde derecho */
+}
+
+.section--projects .projects-hero__top{
+  width: 100%;
+}
+
+.section--projects .projects-tech{
+  margin-left: auto;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Mobile */
+@media (max-width: 780px){
+  .container--projects{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section--projects .projects-hero__top{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .section--projects .projects-tech{
+    margin-left: 0;
+    text-align: left;
+    white-space: normal;
+  }
+}
