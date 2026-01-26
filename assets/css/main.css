@@ -779,17 +779,17 @@ main.container .page{
    Projects: cards cuadradas (sin tocar botones)
    ========================= */
 
-.projects-page .project-card{
+.projects section .project-card{
   border-radius: 0 !important;
 }
 
 /* Si tu card tiene “caja” interna (media/imagen), la cuadramos también */
-.projects-page .project-card__media,
-.projects-page .project-card__media img{
+.projects section .project-card__media,
+.projects section .project-card__media img{
   border-radius: 0 !important;
 }
 
 /* Si en algún caso estás usando .card en projects, también lo cubrimos */
-.projects-page .card{
+.projects section .card{
   border-radius: 0 !important;
 }
