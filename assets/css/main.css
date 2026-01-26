@@ -552,7 +552,7 @@ main.container .page{
 
 /* 4) Grid con más espacio entre tarjetas */
 .projects-grid{
-  gap: 24px;                    /* antes 18px: más aire */
+  gap: 38px;                    /* antes 18px: más aire */
 }
 
 /* 5) Tarjetas: más padding, más altura visual */
