@@ -1191,3 +1191,26 @@ projects-page .projects-title{
 .section.projects-page .projects-header{
   text-align: center;
 }
+/* FIX: NO centrar el título. Centrar solo texto + tabs */
+.section.projects-page .projects-header{
+  max-width: none !important;
+  margin: 0 0 22px !important;
+  text-align: left !important; /* por si se te coló un text-align:center */
+}
+
+/* Centra SOLO la frase */
+.section.projects-page .projects-lede{
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Centra SOLO los botones */
+.section.projects-page .projects-tabs{
+  justify-content: center !important;
+}
+
+/* Evita que los botones se estiren */
+.section.projects-page .projects-tabs .tab{
+  flex: 0 0 auto;
+}
