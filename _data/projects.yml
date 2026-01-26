@@ -3,6 +3,7 @@
   desc: "Modelo estrella, KPIs, segmentación por provincia/producto y análisis temporal."
   href: "/04_powerbi/dashboard_ventas/"
   repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/04_powerbi/dashboard_ventas"
+  image: "/assets/img/projects/powerbi.png"
   order: 1
   tags: ["Modelado", "DAX", "Time Intelligence", "KPIs"]
 
@@ -11,6 +12,7 @@
   desc: "Ventanas, rankings, cohortes y controles de calidad de datos."
   href: "/01_sql/ventas_provincias/"
   repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/01_sql/ventas_provincias"
+  image: "/assets/img/projects/sql.png"
   order: 1
   tags: ["Window Functions", "Ranking", "QA", "Análisis"]
 
@@ -19,6 +21,7 @@
   desc: "EDA y modelado (regresión lineal), preparación de variables y evaluación."
   href: "/02_python/actividad_ina_fifa/"
   repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/02_python/actividad_ina_fifa"
+  image: "/assets/img/projects/python.png"
   order: 1
   tags: ["EDA", "Regresión", "Feature Engineering", "Evaluación"]
 
@@ -27,6 +30,7 @@
   desc: "Visión 360 y segmentación de clientes con K-Means (Elbow + Silhouette)."
   href: "/05_crm/adventureworks_clientes/"
   repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/05_crm/adventureworks_clientes"
+  image: "/assets/img/projects/python.png"
   order: 2
   tags: ["Clustering", "K-Means", "Segmentación", "Recomendaciones"]
 
@@ -35,5 +39,6 @@
   desc: "Exploratorio: facturación por país, tendencias, precios por color y perfil de compradores."
   href: "/03_r/adventureworks_transversal/"
   repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/03_r/adventureworks_transversal"
+  image: "/assets/img/projects/rstudio.png"
   order: 1
   tags: ["EDA", "Series", "Visualización", "Negocio"]
