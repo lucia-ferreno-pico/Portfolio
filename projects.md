@@ -4,72 +4,75 @@ title: Proyectos
 permalink: /projects/
 ---
 
-<section class="section">
-  <div class="section-title">
-    <h2>Proyectos</h2>
-    <span>SQL · Power BI · Python · R</span>
-  </div>
-
-  <p class="subtitle" style="max-width: 70ch;">
-    Una selección de proyectos agrupados por tecnología. Cada proyecto incluye una página de detalle y acceso al código.
-  </p>
-
-  {% assign cats = "Power BI,SQL,Python,R" | split: "," %}
-
-  {% assign featured = site.data.projects | where: "featured", true | sort: "featured_order" %}
-  {% if featured and featured.size > 0 %}
-  <div class="projects-featured">
-    <div class="section-title" style="margin-top: 8px;">
-      <h2>Destacado</h2>
-      <span>{{ featured.size }} proyecto(s)</span>
+<section class="projects section">
+  <div class="projects-header">
+    <div class="section-title">
+      <h2>Proyectos</h2>
+      <span>SQL · Power BI · Python · R</span>
     </div>
 
-    <div class="projects-list">
-      {% for p in featured %}
-      <div class="project-card">
-        <div class="project-card__head">
-          <p class="kicker">{{ p.category }}</p>
-          <h3 class="title">{{ p.title }}</h3>
-          <p class="desc">{{ p.desc }}</p>
-        </div>
+    <p class="projects-lede">
+      Una selección de proyectos agrupados por tecnología. Cada proyecto incluye una página de detalle y acceso al código.
+    </p>
 
-        <div class="project-card__actions">
-          <a class="btn btn--primary" href="{{ p.href | relative_url }}">Ver proyecto</a>
-          {% if p.repo %}
-          <a class="btn" href="{{ p.repo }}" target="_blank" rel="noopener">Ver código</a>
-          {% endif %}
-        </div>
-      </div>
+    {% assign cats = "Power BI,SQL,Python,R" | split: "," %}
+    <div class="projects-tabs" role="tablist" aria-label="Categorías de proyectos">
+      <button class="tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">Todos</button>
+      {% for c in cats %}
+        <button class="tab" type="button" data-filter="{{ c | downcase | replace: ' ', '' }}" role="tab" aria-selected="false">
+          {{ c }}
+        </button>
       {% endfor %}
     </div>
   </div>
-  {% endif %}
 
-  <div class="projects-tabs" role="tablist" aria-label="Categorías de proyectos">
-    <button class="tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
-    {% for c in cats %}
-      <button class="tab" type="button" data-filter="{{ c | downcase | replace: ' ', '' }}" role="tab" aria-selected="false">{{ c }}</button>
-    {% endfor %}
-  </div>
-
-  <div class="projects-list">
+  <div class="projects-grid">
     {% for c in cats %}
       {% assign items = site.data.projects | where: "category", c | sort: "order" %}
       {% for p in items %}
-      <div class="project-card" data-cat="{{ c | downcase | replace: ' ', '' }}">
-        <div class="project-card__head">
-          <p class="kicker">{{ p.category }}</p>
-          <h3 class="title">{{ p.title }}</h3>
-          <p class="desc">{{ p.desc }}</p>
-        </div>
 
-        <div class="project-card__actions">
-          <a class="btn btn--primary" href="{{ p.href | relative_url }}">Ver proyecto</a>
-          {% if p.repo %}
-          <a class="btn" href="{{ p.repo }}" target="_blank" rel="noopener">Ver código</a>
+        {% assign tech_img = p.image %}
+        {% if tech_img == nil or tech_img == "" %}
+          {% if p.category == "Power BI" %}
+            {% assign tech_img = "/assets/img/projects/powerbi.png" %}
+          {% elsif p.category == "SQL" %}
+            {% assign tech_img = "/assets/img/projects/sql.png" %}
+          {% elsif p.category == "Python" %}
+            {% assign tech_img = "/assets/img/projects/python.png" %}
+          {% elsif p.category == "R" %}
+            {% assign tech_img = "/assets/img/projects/rstudio.png" %}
           {% endif %}
-        </div>
-      </div>
+        {% endif %}
+
+        <article class="project-card" data-cat="{{ c | downcase | replace: ' ', '' }}">
+          <a class="project-media" href="{{ p.href | relative_url }}" aria-label="Abrir proyecto: {{ p.title }}">
+            <img src="{{ tech_img | relative_url }}" alt="" loading="lazy">
+          </a>
+
+          <div class="project-body">
+            <p class="project-kicker">{{ p.category }}</p>
+            <h3 class="project-title">
+              <a href="{{ p.href | relative_url }}">{{ p.title }}</a>
+            </h3>
+            <p class="project-desc">{{ p.desc }}</p>
+
+            {% if p.tags %}
+            <div class="project-tags" aria-label="Tecnologías y técnicas">
+              {% for t in p.tags %}
+                <span class="tag">{{ t }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="project-actions">
+              <a class="btn btn--primary" href="{{ p.href | relative_url }}">Ver proyecto</a>
+              {% if p.repo %}
+                <a class="btn" href="{{ p.repo }}" target="_blank" rel="noopener">Ver código</a>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+
       {% endfor %}
     {% endfor %}
   </div>
