@@ -7,9 +7,10 @@ permalink: /projects/
 <section class="section projects-page">
   <div class="projects-header">
     <div class="section-title">
-      <h2>Proyectos</h2>
-      <span>SQL · Power BI · Python · R</span>
-    </div>
+  <h2 class="projects-title">Proyectos</h2>
+  <span class="projects-tech">SQL · Power BI · Python · R</span>
+</div>
+
 
     <p class="projects-lede">
       
