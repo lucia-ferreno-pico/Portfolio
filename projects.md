@@ -8,7 +8,6 @@ permalink: /projects/
   <div class="projects-header">
     <div class="section-title">
   <h2 class="projects-title">Proyectos</h2>
-  <span class="projects-tech">SQL · Power BI · Python · R</span>
 </div>
 
 
