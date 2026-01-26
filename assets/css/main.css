@@ -1173,3 +1173,21 @@ projects-page .projects-title{
     white-space: normal;
   }
 }
+/* HOTFIX: centrar el bloque (texto + tabs) en /projects/ */
+.section.projects-page .projects-header{
+  max-width: 70ch;            /* ajusta si lo quieres más ancho (p.ej. 78ch) */
+  margin: 0 auto 22px;        /* esto lo centra */
+}
+
+/* Centrar la fila de botones */
+.section.projects-page .projects-tabs{
+  justify-content: center !important;
+}
+
+/* Asegura que los botones no “se repartan” ocupando todo el ancho */
+.section.projects-page .projects-tabs .tab{
+  flex: 0 0 auto;
+}
+.section.projects-page .projects-header{
+  text-align: center;
+}
