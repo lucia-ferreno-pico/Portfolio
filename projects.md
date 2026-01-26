@@ -19,7 +19,7 @@ permalink: /projects/
       
     </p>
 
-    {% assign cats = "Power BI,SQL,Python,R" | split: " , " %}
+    {% assign cats = "Power BI,SQL,Python,R" | split: "," %}
     <div class="projects-tabs" role="tablist" aria-label="Categorías de proyectos">
       <button class="tab is-active" type="button" data-filter="all" role="tab" aria-selected="true">Todos</button>
       {% for c in cats %}
