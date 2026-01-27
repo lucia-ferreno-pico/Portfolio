@@ -116,8 +116,9 @@ permalink: /01_sql/etl_datawarehouse/
 <div class="section">
   <div class="cta">
     <a class="btn btn--primary"
-       href="https://github.com/lucia-ferreno-pico/Portfolio/tree/main/01_sql/etl_datawarehouse"
-       target="_blank" rel="noopener">Ver código</a>
+   href="https://github.com/lucia-ferreno-pico/Portfolio/blob/main/01_sql/etl_datawarehouse/SQLdatawarehouse_ETL.sql"
+   target="_blank" rel="noopener">Ver código</a>
+
 
     <a class="btn"
        href="{{ '/01_sql/etl_datawarehouse/SQLdatawarehouse_ETL.sql' | relative_url }}"
