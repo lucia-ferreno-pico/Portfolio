@@ -45,7 +45,7 @@ permalink: /01_sql/etl_datawarehouse/
     <div class="card">
       <p class="kicker">Vista</p>
       <p class="title">DW_Fact_Sales</p>
-      <img src="{{ '/01_sql/etl_datawarehouse/img/vista.png'}}" alt="Vista Fact Sales" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
+      <img src="{{ '/01_sql/etl_datawarehouse/vista.png'}}" alt="Vista Fact Sales" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
     </div>
   </div>
 </div>
@@ -62,7 +62,7 @@ permalink: /01_sql/etl_datawarehouse/
     Esquema final con una tabla de hechos central y dimensiones conectadas para análisis de ventas.
   </p>
 
-  <img src="{{ '/01_sql/etl_datawarehouse/img/modelo_estrella.png' | relative_url }}" alt="Modelo estrella del datawarehouse" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
+  <img src="{{ '/01_sql/etl_datawarehouse/modelo_estrella.png' | relative_url }}" alt="Modelo estrella del datawarehouse" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
 </div>
 
 <div class="section">
@@ -72,7 +72,7 @@ permalink: /01_sql/etl_datawarehouse/
     Consulta de prueba para verificar cargas y agregaciones básicas (clientes y total por año).
   </p>
 
-  <img src="{{ '/01_sql/etl_datawarehouse/img/consulta.png'}}" alt="Consulta de prueba con resultados" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
+  <img src="{{ '/01_sql/etl_datawarehouse/consulta.png'}}" alt="Consulta de prueba con resultados" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
 </div>
 
 
