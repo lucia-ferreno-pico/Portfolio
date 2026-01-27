@@ -39,20 +39,20 @@ permalink: /01_sql/etl_datawarehouse/
     <div class="card">
       <p class="kicker">Vista</p>
       <p class="title">DW_Dim_Dates</p>
-      <img src="{{ '/01_sql/etl_datawarehouse/vista_dates.png' }}" alt="Vista Dim Dates" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
+      <img src="{{ '/01_sql/etl_datawarehouse/vista_dates.png'| relative_url  }}" alt="Vista Dim Dates" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
     </div>
 
     <div class="card">
       <p class="kicker">Vista</p>
       <p class="title">DW_Fact_Sales</p>
-      <img src="{{ '/01_sql/etl_datawarehouse/vista.png'}}" alt="Vista Fact Sales" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
+      <img src="{{ '/01_sql/etl_datawarehouse/vista.png'| relative_url }}" alt="Vista Fact Sales" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
     </div>
   </div>
 </div>
 
 <div class="section">
   <h3>Tablas creadas</h3>
-  <img src="{{ '/01_sql/etl_datawarehouse/tablas.png'}}" alt="Tablas del datawarehouse" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
+  <img src="{{ '/01_sql/etl_datawarehouse/tablas.png'| relative_url }}" alt="Tablas del datawarehouse" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
 </div>
 
 <div class="section">
@@ -72,7 +72,7 @@ permalink: /01_sql/etl_datawarehouse/
     Consulta de prueba para verificar cargas y agregaciones básicas (clientes y total por año).
   </p>
 
-  <img src="{{ '/01_sql/etl_datawarehouse/consulta.png'}}" alt="Consulta de prueba con resultados" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
+  <img src="{{ '/01_sql/etl_datawarehouse/consulta.png'| relative_url }}" alt="Consulta de prueba con resultados" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
 </div>
 
 
