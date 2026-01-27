@@ -17,12 +17,18 @@ permalink: /01_sql/etl_datawarehouse/
 </div>
 
 <div class="section">
-  ## Objetivo
+  <div class="section">
+  <h3>Objetivo</h3>
+    
 - Transformar y estructurar datos operacionales (OLTP) en un esquema analítico (DW).
+  
 - Generar **vistas en origen** y **carga en destino** para simplificar consumo y análisis.
+  
 - Incorporar métricas derivadas (porcentajes, tiempos de envío, etc.) y claves de fechas.
 
-## Enfoque (ETL)
+<div class="section">
+  <h3>Enfoque (ETL)</h3>
+  
 1. **Vistas en origen (AdventureWorks2017)** para preparar datos:
    - `DW_Fact_Sales`
    - `DW_Dim_Dates`
