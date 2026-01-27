@@ -14,7 +14,7 @@ permalink: /projects/
     <p class="projects-lede">
       
       
-      Una selección de proyectos agrupados por tecnología. Cada proyecto incluye una página de detalle y acceso al código.
+      Una selección de mis proyectos agrupados por tecnología. Cada proyecto incluye una página de detalle y acceso al código.
 
       
     </p>
