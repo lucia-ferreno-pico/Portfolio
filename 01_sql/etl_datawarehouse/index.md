@@ -7,6 +7,7 @@ permalink: /01_sql/etl_datawarehouse/
 <div class="section">
   <div class="section-title">
     <h2>ETL en SQL - creación de datawarehouse</h2>
+    <span>SQL Server · ETL · Data Warehouse · Modelo estrella</span>
   </div>
 
   <p class="subtitle" style="max-width: 70ch;">
