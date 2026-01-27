@@ -50,3 +50,11 @@
   image: "/assets/img/projects/rstudio.png"
   order: 1
   tags: ["EDA", "Series", "Visualización", "Negocio"]
+
+- category: "R"
+  title: "Temporalidad y predicción de ventas"
+  desc: "Análisis temporal por provincia y forecasting (ARIMA/ETS) en frecuencia diaria y semanal."
+  href: "/03_r/temporalidad_ventas/"
+  repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/03_r/temporalidad_ventas"
+  order: 2
+  tags: ["Series temporales", "ARIMA", "ETS", "Forecast", "Visualización", "Data Wrangling"]
