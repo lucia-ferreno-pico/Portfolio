@@ -16,6 +16,14 @@
   order: 1
   tags: ["Window Functions", "Ranking", "QA", "Análisis"]
 
+- category: "SQL"
+  title: "ETL en SQL - creación de datawarehouse"
+  desc: "ETL con vistas, creación de dimensiones y tabla de hechos, y modelo estrella en SQL Server (AdventureWorks)."
+  href: "/01_sql/etl_datawarehouse/"
+  repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/01_sql/etl_datawarehouse"
+  order: 2
+  tags: ["ETL", "Views", "Star Schema", "SQL Server"]
+
 - category: "Python"
   title: "Actividad INA (FIFA)"
   desc: "EDA y modelado (regresión lineal), preparación de variables y evaluación."
