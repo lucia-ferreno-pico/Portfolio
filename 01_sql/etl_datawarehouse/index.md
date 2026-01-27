@@ -17,13 +17,27 @@ permalink: /01_sql/etl_datawarehouse/
 </div>
 
 <div class="section">
-  <h3>Qué hice</h3>
-  <ul>
-    <li><b>ETL con vistas</b> para preparar y migrar datos a la base de destino.</li>
-    <li><b>Dimensiones</b>: fechas, producto, cliente, territorio y método de envío.</li>
-    <li><b>Hechos</b>: Fact_Sales incluyendo claves (incl. <i>TerritoryID</i>).</li>
-    <li><b>Modelo estrella</b> para reporting (Power BI / herramientas BI).</li>
-  </ul>
+  ## Objetivo
+- Transformar y estructurar datos operacionales (OLTP) en un esquema analítico (DW).
+- Generar **vistas en origen** y **carga en destino** para simplificar consumo y análisis.
+- Incorporar métricas derivadas (porcentajes, tiempos de envío, etc.) y claves de fechas.
+
+## Enfoque (ETL)
+1. **Vistas en origen (AdventureWorks2017)** para preparar datos:
+   - `DW_Fact_Sales`
+   - `DW_Dim_Dates`
+   - `DW_Dim_Product`
+   - `DW_Dim_ShipMethod`
+   - `DW_Dim_Territory`
+   - `DW_Dim_Customer_IN` (clientes individuales)
+   - `DW_Dim_Customer_ST` (clientes tienda)
+
+2. **Tablas en destino (datawarehouse)**:
+   - `Fact_Sales`
+   - `Dim_Dates`, `Dim_Product`, `Dim_ShipMethod`, `Dim_Territory`, `Dim_Customer_IN`, `Dim_Customer_ST`
+
+3. **Carga**: inserción en tablas del DW desde las vistas del origen.
+
 </div>
 
 
