@@ -26,28 +26,20 @@ permalink: /01_sql/etl_datawarehouse/
   </ul>
 </div>
 
-<div class="section">
-  <h3>Modelo estrella</h3>
 
-  <p class="subtitle" style="max-width: 70ch;">
-    Esquema final con una tabla de hechos central y dimensiones conectadas para análisis de ventas.
-  </p>
-
-  <img src="{{ '/01_sql/etl_datawarehouse/img/modelo_estrella.png' | relative_url }}" alt="Modelo estrella del datawarehouse" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
-</div>
 
 <div class="section">
-  <h3>Implementación (SQL)</h3>
+  <h3>Extracción (SQL)</h3>
 
   <p class="subtitle" style="max-width: 70ch;">
-    Ejemplos de creación de vistas y estructuras. El script completo está en el repositorio.
+    Creación de vistas de Adventureworks para la obtencion de los datos y su posterior insercion en las tablas creadas. El script completo está en el repositorio.
   </p>
 
   <div class="grid">
     <div class="card">
       <p class="kicker">Vista</p>
       <p class="title">DW_Dim_Dates</p>
-      <img src="{{ '/01_sql/etl_datawarehouse/img/vista.png' }}" alt="Vista Dim Dates" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
+      <img src="{{ '/01_sql/etl_datawarehouse/vista_dates.png' }}" alt="Vista Dim Dates" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
     </div>
 
     <div class="card">
@@ -56,6 +48,21 @@ permalink: /01_sql/etl_datawarehouse/
       <img src="{{ '/01_sql/etl_datawarehouse/img/vista.png'}}" alt="Vista Fact Sales" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
     </div>
   </div>
+</div>
+
+<div class="section">
+  <h3>Tablas creadas</h3>
+  <img src="{{ '/01_sql/etl_datawarehouse/tablas.png'}}" alt="Tablas del datawarehouse" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
+</div>
+
+<div class="section">
+  <h3>Modelo estrella</h3>
+
+  <p class="subtitle" style="max-width: 70ch;">
+    Esquema final con una tabla de hechos central y dimensiones conectadas para análisis de ventas.
+  </p>
+
+  <img src="{{ '/01_sql/etl_datawarehouse/img/modelo_estrella.png' | relative_url }}" alt="Modelo estrella del datawarehouse" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
 </div>
 
 <div class="section">
@@ -68,10 +75,6 @@ permalink: /01_sql/etl_datawarehouse/
   <img src="{{ '/01_sql/etl_datawarehouse/img/consulta.png'}}" alt="Consulta de prueba con resultados" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
 </div>
 
-<div class="section">
-  <h3>Tablas creadas</h3>
-  <img src="{{ '/01_sql/etl_datawarehouse/img/tablas.png'}}" alt="Tablas del datawarehouse" style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
-</div>
 
 <div class="section">
   <a class="btn btn--primary" href="https://github.com/lucia-ferreno-pico/Portfolio/tree/main/01_sql/etl_datawarehouse" target="_blank" rel="noopener">Ver código</a>
