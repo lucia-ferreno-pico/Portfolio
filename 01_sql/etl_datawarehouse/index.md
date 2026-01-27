@@ -11,8 +11,8 @@ permalink: /01_sql/etl_datawarehouse/
 
   <p class="subtitle" style="max-width: 70ch;">
 
-    <span>SQL Server · ETL · Data Warehouse · Modelo estrella</span>
-      
+
+    <p class="subtitle" style="max-width: 70ch;">
     Construcción de un <b>datawarehouse</b> a partir de AdventureWorks: creación de <b>dimensiones</b>,
     <b>tabla de hechos</b>, <b>vistas</b> para carga y un <b>modelo estrella</b> listo para explotación analítica.
   </p>
