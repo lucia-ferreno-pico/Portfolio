@@ -8,7 +8,6 @@ permalink: /03_r/temporalidad_ventas/
   <div class="section-title">
     <h2>Temporalidad y predicción de ventas</h2>
      <span>R · Series temporales · Visualización · ARIMA . ETS</span>
-    </p>
   </div>
 
   <p class="subtitle" style="max-width: 70ch;">
@@ -72,7 +71,7 @@ permalink: /03_r/temporalidad_ventas/
 <div class="section">
   <div class="cta">
     <a class="btn btn--primary"
-       href="https://github.com/lucia-ferreno-pico/Portfolio/tree/main/03_r/temporalidad_ventas"
+       href="https://github.com/lucia-ferreno-pico/Portfolio/tree/main/03_r/temporalidad_ventas/temporalidad_ventas.R"
        target="_blank" rel="noopener">
        Ver código
     </a>
