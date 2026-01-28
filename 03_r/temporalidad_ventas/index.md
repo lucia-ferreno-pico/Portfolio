@@ -8,6 +8,7 @@ permalink: /03_r/temporalidad_ventas/
   <div class="section-title">
     <h2>Temporalidad y predicción de ventas</h2>
      <span>R · Series temporales · Visualización · ARIMA . ETS</span>
+    </p>
   </div>
 
   <p class="subtitle" style="max-width: 70ch;">
@@ -37,7 +38,7 @@ permalink: /03_r/temporalidad_ventas/
     permitiendo comparar tendencias y estacionalidad entre territorios.
   </p>
 
-  <img src="{{ '/03_r/temporalidad_prediccion_ventas/temporalidad_ventas.png' | relative_url }}"
+  <img src="{{ '/03_r/temporalidad_ventas/temporalidad_ventas.png' | relative_url }}"
        alt="Temporalidad de ventas por provincia"
        style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
 </div>
@@ -50,7 +51,7 @@ permalink: /03_r/temporalidad_ventas/
     <b>media diaria por mes</b> para detectar ciclos y comportamiento estacional.
   </p>
 
-  <img src="{{ '/03_r/temporalidad_prediccion_ventas/dia_semana_mes.png' | relative_url }}"
+  <img src="{{ '/03_r/temporalidad_ventas/dia_semana_mes.png' | relative_url }}"
        alt="Ventas por día de la semana y media mensual"
        style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
 </div>
@@ -63,7 +64,7 @@ permalink: /03_r/temporalidad_ventas/
     evaluando su precisión y limitaciones en entornos con alta variabilidad.
   </p>
 
-  <img src="{{ '/03_r/temporalidad_prediccion_ventas/arima_madrid.png' | relative_url }}"
+  <img src="{{ '/03_r/temporalidad_ventas/arima_madrid.png' | relative_url }}"
        alt="Predicción ARIMA de ventas en Madrid"
        style="width:100%; border:1px solid rgba(17,17,17,.14); background:#fff;">
 </div>
