@@ -1229,3 +1229,70 @@ projects-page .projects-title{
   font-size: 42px;
   letter-spacing: .14em; 
 }
+/* =========================
+   ABOUT (editorial)
+   Familia: vertical 2:3
+   Hobby: horizontal 3:2
+   ========================= */
+
+
+/* Título principal "About" */
+.about-page .section-title{
+  margin-bottom: 38px;
+}
+
+.about-page .section-title h2{
+  font-size: 42px;
+  margin: 0;
+}
+
+/* Texto */
+.about-page p{
+  max-width: 72ch;
+  line-height: 1.7;
+}
+
+/* Secciones personales */
+.about-page .personal-section{
+  margin-top: 34px;
+}
+
+.about-page .personal-section h2{
+  font-size: 28px;
+  margin: 0 0 10px 0;
+}
+
+/* Galerías */
+.about-page .about-gallery{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+
+/* Base imagen */
+.about-page .about-gallery img{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0; /* esquinas cuadradas */
+}
+
+/* Familia: vertical 2:3 (más alto) */
+.about-page .about-gallery.is-family img{
+  aspect-ratio: 2 / 3;
+}
+
+/* Hobby: horizontal 3:2 */
+.about-page .about-gallery.is-hobby img{
+  aspect-ratio: 3 / 2;
+}
+
+/* Responsive */
+@media (max-width: 760px){
+  .about-page .about-gallery{
+    grid-template-columns: 1fr;
+  }
+}
