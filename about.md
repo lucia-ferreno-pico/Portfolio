@@ -7,7 +7,6 @@ permalink: /about/
 <section class="section">
   <div class="section-title">
     <h2>About</h2>
-    <span>Un poco sobre mí</span>
   </div>
 
   <p>
