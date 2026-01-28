@@ -3,7 +3,7 @@ layout: default
 title: About
 permalink: /about/
 ---
-
+<div class="about-page">
 <section class="section">
   <div class="section-title">
     <h2>About</h2>
@@ -30,3 +30,4 @@ permalink: /about/
     </div>
   </div>
 </section>
+</div>
