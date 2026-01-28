@@ -1215,3 +1215,17 @@ projects-page .projects-title{
 .section.projects-page .projects-tabs .tab{
   flex: 0 0 auto;
 }
+
+.about-page{
+  padding-top: 70px;
+}
+
+.about-page .section-title{
+  margin-bottom: 38px;
+}
+
+
+.about-page .section-title h2{
+  font-size: 42px;      
+  letter-spacing: .14em; 
+}
