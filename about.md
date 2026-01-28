@@ -29,19 +29,16 @@ permalink: /about/
     <h2>Familia</h2>
     <p>Placeholder breve (lo cambiamos cuando el diseño esté estable).</p>
 
-    <div class="about-gallery">
-      <img src="{{ '/assets/img/about/family-1.jpg' | relative_url }}" alt="Familia 1">
-      <img src="{{ '/assets/img/about/family-2.jpg' | relative_url }}" alt="Familia 2">
-    </div>
-  </section>
+    <div class="about-gallery is-family">
+  <img src="{{ '/assets/img/about/family-1.jpg' | relative_url }}" alt="Familia 1">
+  <img src="{{ '/assets/img/about/family-2.jpg' | relative_url }}" alt="Familia 2">
+</div>
 
   <section class="personal-section">
     <h2>Afición</h2>
     <p>Placeholder breve (lo cambiamos cuando el diseño esté estable).</p>
 
-    <div class="about-gallery">
-      <img src="{{ '/assets/img/about/hobby-1.jpg' | relative_url }}" alt="Afición 1">
-      <img src="{{ '/assets/img/about/hobby-2.jpg' | relative_url }}" alt="Afición 2">
-    </div>
-  </section>
+   <div class="about-gallery is-hobby">
+  <img src="{{ '/assets/img/about/hobby-1.jpg' | relative_url }}" alt="Afición 1">
+  <img src="{{ '/assets/img/about/hobby-2.jpg' | relative_url }}" alt="Afición 2">
 </div>
