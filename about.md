@@ -20,11 +20,11 @@ permalink: /about/
   </p>
 
   <div class="personal">
-    <div class="box">
+    <div class="section">
       <h3>Family</h3>
       <p>Placeholder breve (lo cambiamos cuando el diseño esté estable).</p>
     </div>
-    <div class="box">
+    <div class="section">
       <h3>Afición</h3>
       <p>Placeholder breve (lo cambiamos cuando el diseño esté estable).</p>
     </div>
