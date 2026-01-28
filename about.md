@@ -21,13 +21,14 @@ permalink: /about/
 
   <div class="personal">
     <div class="section">
-      <h3>Family</h3>
+      <h3>Familia</h3>
       <p>Placeholder breve (lo cambiamos cuando el diseño esté estable).</p>
     </div>
+  </section>
     <div class="section">
       <h3>Afición</h3>
       <p>Placeholder breve (lo cambiamos cuando el diseño esté estable).</p>
     </div>
   </div>
-</section>
+   </section>
 </div>
