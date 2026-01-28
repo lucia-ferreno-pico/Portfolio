@@ -71,13 +71,13 @@ permalink: /03_r/temporalidad_prediccion_ventas/
 <div class="section">
   <div class="cta">
     <a class="btn btn--primary"
-       href="https://github.com/lucia-ferreno-pico/Portfolio/tree/main/03_r/temporalidad_prediccion_ventas"
+       href="https://github.com/lucia-ferreno-pico/Portfolio/tree/main/03_r/temporalidad_ventas"
        target="_blank" rel="noopener">
        Ver código
     </a>
 
     <a class="btn"
-       href="{{ '/03_r/temporalidad_prediccion_ventas/temporalidad_ventas.R' | relative_url }}"
+       href="{{ '/03_r/temporalidad_ventas/temporalidad_ventas.R' | relative_url }}"
        target="_blank" rel="noopener">
        Abrir script R
     </a>
