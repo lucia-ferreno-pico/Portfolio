@@ -16,7 +16,7 @@ permalink: /about/
     Estoy convencida de que los beneficios corporativos y económicos llegan cuando las decisiones se toman con datos fiables, definiciones claras y una lectura correcta del contexto.
   </p>
   <p>
-    Con esto como motivacion principal, dedicí hacer el Master Universitario en Inteligencia de Negocio [Ver] (https://www.unir.net/empresa/master-business-intelligence/) y descubrí un gran mundo nuevo, totalmente desconocido para mí hasta el momento. Pero que me dío a mis grandes "amigos" actuales: SQL . R . Power BI . Python
+    Con esto como motivacion principal, dedicí hacer el Master Universitario en Inteligencia de Negocio [Ver](https://www.unir.net/empresa/master-business-intelligence/) y descubrí un gran mundo nuevo, totalmente desconocido para mí hasta el momento. Pero que me dío a mis grandes "amigos" actuales: SQL . R . Power BI . Python
   </p>
 
   <div class="personal">
