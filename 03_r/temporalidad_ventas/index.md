@@ -7,11 +7,11 @@ permalink: /03_r/temporalidad_ventas/
 <div class="section">
   <div class="section-title">
     <h2>Temporalidad y predicción de ventas</h2>
+     <span>R · Series temporales · Visualización · ARIMA . ETS</span>
   </div>
 
   <p class="subtitle" style="max-width: 70ch;">
-    <span>R · Series temporales · Visualización · ARIMA . ETS</span>
-  </p>
+   
 
   <p class="subtitle" style="max-width: 70ch;">
     Análisis de la <b>temporalidad de las ventas</b> a nivel provincial y nacional,
