@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Temporalidad y predicción de ventas
-permalink: /03_r/temporalidad_prediccion_ventas/
+permalink: /03_r/temporalidad_ventas/
 ---
 
 <div class="section">
