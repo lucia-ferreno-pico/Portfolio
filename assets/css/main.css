@@ -1216,16 +1216,19 @@ projects-page .projects-title{
   flex: 0 0 auto;
 }
 
-.about-page{
+about-page{
   padding-top: 70px;
 }
 
-.about-page .section-title{
+about-page .section-title{
   margin-bottom: 38px;
 }
 
 
-.about-page .section-title h2{
-  font-size: 42px;      
-  letter-spacing: .14em; 
+about-page .projects-title{
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  margin: 0;
 }
