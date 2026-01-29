@@ -1141,7 +1141,7 @@ main.container .page{
    (PEGAR AL FINAL DEL main.css)
    ========================================================= */
 
-projects-page .projects-title{
+.projects-page .projects-title{
   font-size: 42px;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -1383,5 +1383,56 @@ projects-page .projects-title{
   .about-page .personal-photos{
     grid-template-columns: 1fr;  /* una debajo de otra en móvil */
     justify-content: start;
+  }
+}
+@media (max-width: 780px){
+  .section-title{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .section-title h2{
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-height: 1.15;
+  }
+
+  .section-title span{
+    white-space: normal;
+  }
+}
+/* =========================
+   HOTFIX MOBILE OVERFLOW (Projects)
+   ========================= */
+
+/* Evita desbordes horizontales globales */
+html, body { max-width: 100%; overflow-x: hidden; }
+
+/* Clave para grids/flex: permitir encoger */
+.container, main, .section, .projects-grid, .projects-list,
+.project-card, .project-row, .project-row__content, .project-row__media {
+  min-width: 0;
+}
+
+/* Asegura que las cards nunca superen el contenedor */
+.project-card { max-width: 100%; width: 100%; }
+
+/* Mobile: 1 columna real en cualquier grid de proyectos */
+@media (max-width: 780px){
+  .projects-grid,
+  .projects-list{
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-card{
+    grid-column: 1 / -1 !important; /* ocupa todo el ancho del grid */
+  }
+
+  /* Si hay padding lateral raro en projects */
+  .container--projects{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
