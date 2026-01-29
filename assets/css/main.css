@@ -1364,6 +1364,10 @@ projects-page .projects-title{
   text-justify: inter-word;   /* mejor reparto entre palabras (cuando el navegador lo soporte) */
   hyphens: auto;              /* evita ríos de espacio si el navegador/idioma lo permite */
 }
+/* Texto más estrecho en secciones personales */
+.about-page .personal-text p{
+  max-width: 52ch;   /* más estrecho, editorial */
+}
 
 /* Responsive: en móvil apila y centra */
 @media (max-width: 900px){
