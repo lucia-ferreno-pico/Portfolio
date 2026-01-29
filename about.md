@@ -34,7 +34,7 @@ permalink: /about/
     
     <div class="personal-grid">
     <div class="personal-text">
-      <p> Tengo  la  enorme suerte de ser la mamá  de  Mario y Mateo, dos niños increíbles y aventureros, que me enseñan cada día lo maravillosa que es la vida y lo divertido que es aprender cada día.</p>
+      <p> Tengo  la  enorme suerte de ser la mamá de  Mario y Mateo, dos niños increíbles y aventureros, que me enseñan cada día lo maravillosa que es la vida y lo divertido y gratificante que es aprender continuamente.</p>
     </div>
 
     <div class="personal-photos family-photos">
