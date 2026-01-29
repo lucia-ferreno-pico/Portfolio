@@ -1296,3 +1296,28 @@ projects-page .projects-title{
     grid-template-columns: 1fr;
   }
 }
+/* Galerías About — tamaño y espaciado coherente */
+.about-page img {
+  display: block;
+  width: 100%;
+  max-width: 540px; /* límite de ancho similar a diseño editorial */
+  margin: 24px auto; /* separa del texto arriba y abajo */
+  object-fit: cover;
+  border-radius: 0; /* esquinas cuadradas */
+}
+
+/* Verticales — sección Familia */
+.about-gallery.is-family img {
+  aspect-ratio: 2 / 3; /* retrato más alto */
+}
+
+/* Horizontales — sección Afición */
+.about-gallery.is-hobby img {
+  aspect-ratio: 3 / 2; /* apaisado */
+}
+
+@media (max-width: 760px) {
+  .about-page img {
+    max-width: 100%;
+  }
+}
