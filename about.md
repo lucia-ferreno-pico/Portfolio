@@ -7,7 +7,7 @@ permalink: /about/
 <div class="about-page">
   <section class="section">
     <div class="section-title">
-      <h2>About</h2>
+      <h2>Sobre mí</h2>
     </div>
     <p>
     ¡Hola! Encantada de que estés aquí.
