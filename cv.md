@@ -29,7 +29,7 @@ permalink: /cv/
     <a class="btn" href="https://learn.microsoft.com/api/credentials/share/es-es/luciaferrenopico-9943/D15B2D91C08BD62B?sharingId=1CE9A7D4EED2BA72" target="_blank" rel="noopener noreferrer">PL-300</a>
   </div>
 
-    <p>Curso Universitario Avanzado en data Analyst en Power BI</p>
+  <p>Curso Universitario Avanzado en data Analyst en Power BI</p>
 
   <div class="cta">
    <a class="btn" href="{{ '/Curso_PowerBI.pdf' | relative_url }}" rel="noopener noreferrer">Ver Certificado</a>
