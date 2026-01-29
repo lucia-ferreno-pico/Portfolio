@@ -32,7 +32,7 @@ permalink: /cv/
   <p>Decision Making (Harvard ManageMentor)</p>
 
   <div class="cta">
-    <a class="btn btn--primary" href="{{ '/certificado de harvarddecision_making.pdf' | relative_url }}" target="_blank" rel="noopener">Ver CV (PDF)</a>
+    <a class="btn btn--primary" href="{{ '/certificado de harvarddecision_making.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
   </div>
 </section>
 
