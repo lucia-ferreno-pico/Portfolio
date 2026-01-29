@@ -1321,7 +1321,7 @@ projects-page .projects-title{
 
 .about-page .personal-block h2{
   font-size: 28px;
-  margin: 0 0 10px 0;
+  margin: 0 0 70px 0;
 }
 
 /* 2 columnas: texto + fotos */
@@ -1366,7 +1366,7 @@ projects-page .projects-title{
 }
 /* Texto más estrecho en secciones personales */
 .about-page .personal-text p{
-  max-width: 46ch;   /* más estrecho, editorial */
+  max-width: 38ch;   /* más estrecho, editorial */
 }
 
 /* Responsive: en móvil apila y centra */
