@@ -45,7 +45,7 @@ permalink: /about/
 </section>
 
  <section class="personal-block">
-  <h2>Afición</h2>
+  <h2>Buceo</h2>
 
   <div class="personal-grid">
     <div class="personal-text">
