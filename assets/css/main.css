@@ -1366,7 +1366,7 @@ projects-page .projects-title{
 }
 /* Texto más estrecho en secciones personales */
 .about-page .personal-text p{
-  max-width: 52ch;   /* más estrecho, editorial */
+  max-width: 46ch;   /* más estrecho, editorial */
 }
 
 /* Responsive: en móvil apila y centra */
