@@ -1392,10 +1392,10 @@ main.container .page{
     gap: 10px;
   }
 
-  .section-title h2{
     white-space: normal;
-    overflow-wrap: anywhere;
-    word-break: normal;
+    overflow-wrap: normal;  /* NO rompe por letras */
+    word-break: keep-all;   /* mantiene palabras enteras */
+    hyphens: manual;        /* sin guionado automático */
     line-height: 1.15;
   }
 
