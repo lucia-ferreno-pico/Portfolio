@@ -25,20 +25,32 @@ permalink: /about/
     </p>
   </section>
 
-  <section class="personal-section">
+  <section class="personal-block">
     <h2>Familia</h2>
-    <p>Placeholder breve (lo cambiamos cuando el diseño esté estable).</p>
+    
+    <div class="personal-grid">
+    <div class="personal-text">
+      <p>Tu texto de familia aquí…</p>
+    </div>
 
-    <div class="about-gallery is-family">
-  <img src="{{ '/assets/img/about/family-1.jpg' | relative_url }}" alt="Familia 1">
-  <img src="{{ '/assets/img/about/family-2.jpg' | relative_url }}" alt="Familia 2">
-</div>
+    <div class="personal-photos family-photos">
+      <img src="{{ '/assets/img/about/family-1.jpg' | relative_url }}" alt="Familia 1">
+      <img src="{{ '/assets/img/about/family-2.jpg' | relative_url }}" alt="Familia 2">
+    </div>
+  </div>
+</section>
 
-  <section class="personal-section">
-    <h2>Afición</h2>
-    <p>Placeholder breve (lo cambiamos cuando el diseño esté estable).</p>
+ <section class="personal-block">
+  <h2>Afición</h2>
 
-   <div class="about-gallery is-hobby">
-  <img src="{{ '/assets/img/about/hobby-1.jpg' | relative_url }}" alt="Afición 1">
-  <img src="{{ '/assets/img/about/hobby-2.jpg' | relative_url }}" alt="Afición 2">
-</div>
+  <div class="personal-grid">
+    <div class="personal-text">
+      <p>Tu texto de afición aquí…</p>
+    </div>
+
+    <div class="personal-photos hobby-photos">
+      <img src="{{ '/assets/img/about/hobby-1.jpg' | relative_url }}" alt="Afición 1">
+      <img src="{{ '/assets/img/about/hobby-2.jpg' | relative_url }}" alt="Afición 2">
+    </div>
+  </div>
+</section>
