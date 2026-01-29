@@ -1296,3 +1296,79 @@ projects-page .projects-title{
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   ABOUT - layout editorial (2 columnas)
+   ========================= */
+
+.about-page{
+  padding-top: 70px;
+}
+
+.about-page .section-title{
+  margin-bottom: 38px;
+}
+
+.about-page .section-title h2{
+  font-size: 42px;
+  margin: 0;
+}
+
+.about-page p{
+  max-width: 72ch;
+  line-height: 1.7;
+}
+
+/* Bloques personales */
+.about-page .personal-block{
+  margin-top: 34px;
+}
+
+.about-page .personal-block h2{
+  font-size: 28px;
+  margin: 0 0 10px 0;
+}
+
+/* 2 columnas: texto + fotos */
+.about-page .personal-grid{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto; /* texto flexible, fotos al ancho justo */
+  column-gap: 56px;                           /* “aire” entre columnas */
+  align-items: start;
+}
+
+/* Columna de fotos: 2 imágenes en columna (como bloque editorial) */
+.about-page .personal-photos{
+  display: grid;
+  row-gap: 14px;
+  justify-items: end; /* las pega a la derecha (sensación editorial) */
+}
+
+/* Regla base de imagen */
+.about-page .personal-photos img{
+  display: block;
+  border-radius: 0;     /* esquinas cuadradas */
+  object-fit: cover;    /* recorte limpio */
+}
+
+/* Familia: vertical 2:3, tamaño parecido al de Dalya */
+.about-page .family-photos img{
+  width: 210px;
+  height: 315px;        /* 210 * (3/2) = 315 */
+}
+
+/* Hobby: horizontal 3:2 (más “apaisado”) */
+.about-page .hobby-photos img{
+  width: 280px;
+  height: 187px;        /* 280 * (2/3) ≈ 186.7 */
+}
+
+/* Responsive: en móvil apila y centra */
+@media (max-width: 900px){
+  .about-page .personal-grid{
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+  .about-page .personal-photos{
+    justify-items: start; /* fotos alineadas con el texto */
+  }
+}
