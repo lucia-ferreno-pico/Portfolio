@@ -1336,12 +1336,14 @@ projects-page .projects-title{
   align-items: start;
 }
 
-/* Columna de fotos: 2 imágenes en columna (como bloque editorial) */
 .about-page .personal-photos{
   display: grid;
-  row-gap: 14px;
-  justify-items: end; /* las pega a la derecha (sensación editorial) */
+  grid-template-columns: repeat(2, auto); /* 2 fotos en horizontal */
+  gap: 14px;                              /* espacio entre fotos */
+  justify-content: end;                   /* bloque pegado a la derecha */
+  align-items: start;
 }
+
 
 /* Regla base de imagen */
 .about-page .personal-photos img{
@@ -1370,5 +1372,11 @@ projects-page .projects-title{
   }
   .about-page .personal-photos{
     justify-items: start; /* fotos alineadas con el texto */
+  }
+}
+@media (max-width: 900px){
+  .about-page .personal-photos{
+    grid-template-columns: 1fr;  /* una debajo de otra en móvil */
+    justify-content: start;
   }
 }
