@@ -1359,6 +1359,11 @@ projects-page .projects-title{
   width: 280px;
   height: 187px;        /* 280 * (2/3) ≈ 186.7 */
 }
+.about-page p{
+  text-align: justify;
+  text-justify: inter-word;   /* mejor reparto entre palabras (cuando el navegador lo soporte) */
+  hyphens: auto;              /* evita ríos de espacio si el navegador/idioma lo permite */
+}
 
 /* Responsive: en móvil apila y centra */
 @media (max-width: 900px){
