@@ -32,7 +32,13 @@ permalink: /cv/
   <p>Decision Making (Harvard ManageMentor)</p>
 
   <div class="cta">
-    <a class="btn btn--primary" href="{{ '/certificado de harvarddecision_making.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Ver Certificado</a>
+    <a class="btn btn--primary" href="{{ '/certificado de harvarddecision_making.pdf' | relative_url }}" rel="noopener noreferrer">Ver Certificado</a>
+  </div>
+
+   <p>Participación en programa “Red Proyectum” de La Universidad Internacional de La Rioja</p>
+
+  <div class="cta">
+    <a class="btn btn--primary" href="{{ '/red_proyectum.pdf' | relative_url }}" rel="noopener noreferrer">Ver Certificado</a>
   </div>
 </section>
 
