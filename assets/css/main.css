@@ -1394,7 +1394,7 @@ h2, h3{
 
 /* Mobile: títulos largos más pequeños */
 @media (max-width: 760px){
-  h2{ font-size: 32px; line-height: 1.15; }
+  h2{ font-size: 26px; line-height: 1.15; }
 }
 @media (max-width: 760px){
   .container{
