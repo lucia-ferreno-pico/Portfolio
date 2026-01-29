@@ -1385,21 +1385,3 @@ projects-page .projects-title{
     justify-content: start;
   }
 }
-/* CV headings: permitir salto y evitar corte */
-h2, h3{
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-break: normal;
-}
-
-/* Mobile: títulos largos más pequeños */
-@media (max-width: 760px){
-  h2{ font-size: 26px; line-height: 1.15; }
-}
-@media (max-width: 760px){
-  .container{
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
