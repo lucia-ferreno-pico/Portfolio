@@ -6,7 +6,7 @@ https://lucia-ferreno-pico.github.io/Portfolio/
 Incluye:
 - Proyectos (SQL, R, Python, Power BI)
 - Currículum en PDF y certificaciones
-- - Página About / Sobre mí
+- Página About / Sobre mí
 
 Contacto:
 - Portfolio: https://lucia-ferreno-pico.github.io/Portfolio/
