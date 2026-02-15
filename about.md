@@ -24,37 +24,4 @@ permalink: /about/
       Con esta motivación principal, decidí cursar el Máster Universitario en Inteligencia de Negocio <a href="https://www.unir.net/empresa/master-business-intelligence/" target="_blank" rel="noopener">Ver</a>, una experiencia que me abrió un campo completamente nuevo y me permitió adquirir una base sólida en herramientas y metodologías que hoy forman parte de mi día a día:  <strong>SQL</strong>, <strong>R</strong>, <strong>Power BI</strong> y <strong>Python</strong>. Desde entonces, he enfocado mi desarrollo profesional en transformar datos en información útil, clara y accionable.
     </p>
 
-    <p>
-     ¿Y qué pasa en mi vida cuando no escribo código?
-    </p>
-  </section>
-
-  <section class="personal-block">
-    <h2>Familia</h2>
-    
-    <div class="personal-grid">
-    <div class="personal-text">
-      <p> Tengo  la  enorme suerte de ser la mamá de  Mario y Mateo, dos niños increíbles y aventureros, que me enseñan cada día lo maravillosa que es la vida y lo divertido y gratificante que es aprender continuamente.</p>
-    </div>
-
-    <div class="personal-photos family-photos">
-      <img src="{{ '/assets/img/about/family-1.jpg' | relative_url }}" alt="Familia 1">
-      <img src="{{ '/assets/img/about/family-2.jpg' | relative_url }}" alt="Familia 2">
-    </div>
-  </div>
-</section>
-
- <section class="personal-block">
-  <h2>Buceo</h2>
-
-  <div class="personal-grid">
-    <div class="personal-text">
-      <p>Y como yo también tengo una parte aventurera, disfruto siempre que puedo de un cenote, una barrera de coral o de las frías aguas del Atlántico.</p>
-    </div>
-
-    <div class="personal-photos hobby-photos">
-      <img src="{{ '/assets/img/about/hobby-1.jpg' | relative_url }}" alt="Afición 1">
-      <img src="{{ '/assets/img/about/hobby-2.jpg' | relative_url }}" alt="Afición 2">
-    </div>
-  </div>
-</section>
+   
