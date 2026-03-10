@@ -25,6 +25,9 @@ El objetivo principal que tuve fue construir una solución de reporting financie
 ## Qué incluye el dashboard
 
 ### Panel ejecutivo
+
+![](./screenshots/01_informe_financiero.png)
+
 En la página principal reune los principales indicadores financieros para obtener una lectura rápida del estado del negocio. Se incluyen métricas de actividad, rentabilidad, liquidez, estructura financiera y generación de caja, comparadas con el periodo previo.
 
 ### Balance
