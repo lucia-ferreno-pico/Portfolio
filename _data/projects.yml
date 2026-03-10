@@ -6,7 +6,16 @@
   image: "/assets/img/projects/powerbi.png"
   order: 1
   tags: ["Modelado", "DAX", "Time Intelligence", "KPIs"]
-
+  
+- category: "Power BI"
+  title: "Dashboard financiero y análisis contable"
+  desc: "Reporting financiero en Power BI con KPIs ejecutivos, Balance, PyG, presupuesto, proyección y Cash Flow."
+  href: "/04_powerbi/dashboard_financiero/"
+  repo: "https://github.com/lucia-ferreno-pico/Portfolio/tree/main/04_powerbi/dashboard_financiero"
+  image: "/assets/img/projects/powerbi.png"
+  order: 2
+  tags: ["Reporting financiero", "DAX", "KPIs", "Presupuesto", "Cash Flow"]
+  
 - category: "SQL"
   title: "Consultas analíticas de ventas"
   desc: "Ventanas, rankings, cohortes y controles de calidad de datos."
