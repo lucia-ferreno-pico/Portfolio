@@ -166,5 +166,5 @@ La obtencion del maximo nivel de granularidad hace que este dashboard sea una he
 El resultado es un dashboard orientado a facilitar la toma de decisiones y a mejorar la lectura de la información financiera frente a formatos de reporting más estáticos.
 
 ## Notas
-- Proyecto académico (Master BI).
+- Proyecto académico.
 - Portfolio orientado a reporting financiero y análisis contable.
