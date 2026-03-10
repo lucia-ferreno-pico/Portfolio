@@ -24,6 +24,7 @@ El objetivo principal que tuve fue construir una solución de reporting financie
 
 ## Qué incluye el dashboard
 
+
 ### Panel ejecutivo
 
 ![](./screenshots/01_informe_financiero.png)
@@ -31,21 +32,45 @@ El objetivo principal que tuve fue construir una solución de reporting financie
 En la página principal reune los principales indicadores financieros para obtener una lectura rápida del estado del negocio. Se incluyen métricas de actividad, rentabilidad, liquidez, estructura financiera y generación de caja, comparadas con el periodo previo.
 
 ### Balance
+
+
+![](./screenshots/02_balance.png)
+
 La página de Balance permite revisar la composición del activo, pasivo y patrimonio neto, junto con su peso relativo y su comparación con el balance previo. Esto facilita el análisis de la estructura financiera y la identificación de variaciones relevantes.
 
 ### Balance Evolución
+
+![](./screenshots/03_balance_evolucion.png)
+
+
 Esta vista añade una lectura temporal de las masas patrimoniales, permitiendo observar cómo evolucionan las principales partidas a lo largo de los periodos seleccionados.
 
 ### Pérdidas y Ganancias
+
+![](./screenshots/04_pyg.png)
+
+
 La sección de PyG permite analizar el resultado de explotación, el resultado financiero y el resultado final, con desglose por partidas contables. Esta vista aporta una lectura estructurada del rendimiento económico del negocio.
 
 ### PyG vs Presupuesto
+
+![](./screenshots/05_pyg_vs_ppto.png)
+
+
 Esta página incorpora una comparación entre resultado real y resultado presupuestado, mostrando desviaciones absolutas y relativas. Añade una capa de control de gestión muy útil para el seguimiento presupuestario.
 
 ### PyG Proyectada
+
+![](./screenshots/06_pyg_proyectada.png)
+
+
 El informe incluye una vista específica de PyG Proyectada y un gráfico asociado para analizar la evolución esperada del resultado y compararla con la proyección presupuestaria.
 
 ### Cash Flow
+
+![](./screenshots/07_cash_flow.png)
+
+
 La página de Cash Flow permite revisar los flujos de explotación, inversión y financiación, así como la variación de tesorería y su evolución temporal. Esta vista complementa el análisis de rentabilidad con una lectura clara de la caja.
 
 ---
@@ -121,30 +146,6 @@ Entre los principales indicadores incluidos en el dashboard se encuentran:
 
 Estos indicadores se muestran con comparación frente al periodo anterior para facilitar la detección de cambios y tendencias.
 
----
-
-## Capturas
-
-### Panel ejecutivo
-![](./screenshots/01_informe_financiero.png)
-
-### Balance
-![](./screenshots/02_balance.png)
-
-### Balance evolución
-![](./screenshots/03_balance_evolucion.png)
-
-### Pérdidas y Ganancias
-![](./screenshots/04_pyg.png)
-
-### PyG vs presupuesto
-![](./screenshots/05_pyg_vs_ppto.png)
-
-### Gráfico PyG proyectada
-![](./screenshots/06_pyg_proyectada.png)
-
-### Cash Flow
-![](./screenshots/07_cash_flow.png)
 
 ---
 
